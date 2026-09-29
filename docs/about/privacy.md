@@ -14,18 +14,18 @@ UniBooks（以下簡稱「本平台」）重視你的隱私。本聲明說明我
 
 **Data we collect**
 - *Account data*: email address, name or nickname, avatar, language preferences.
-- *Google user data* (only if you choose "Sign in with Google"): your Google account identifier, email address, name and profile picture, via the `openid`, `email` and `profile` scopes. We do not access Gmail, Google Drive, contacts, calendar or any other Google data.
+- *Google user data* (only if you choose "Sign in with Google", scopes `openid`, `email`, `profile`): Google account ID (`sub`), email address and whether Google verified it, given and family name, profile picture URL, and the other basic claims in the ID token (such as locale and issue/expiry time). We do not access Gmail, Google Drive, contacts, calendar or any other Google data.
 - *Student verification data*: school, `.edu.tw` school email, verification records.
 - *Content you create*: book listings, condition photos, orders, in-app chat messages, restock alerts, reports.
 - *Technical data*: IP address, browser and device type, pages visited, cookies, and anonymous usage statistics (Google Analytics).
 
-**How we use it**: to create and secure your account, verify student status, show listings, match buyers and sellers, deliver chat and notification emails, prevent fraud and abuse, and improve the service. We do not use Google user data for advertising or for any other purpose.
+**How we use it**: to create and secure your account, verify student status, show listings, match buyers and sellers, deliver chat and notification emails, prevent fraud and abuse, and improve the service. Google user data is used only for sign-in and your account profile. It is never used for advertising (including targeted ads), never sold, never sent to Google Analytics, and never used to train AI/ML models.
 
 **How we share it**: we do not sell, rent or transfer personal data. We share it only with the service providers needed to operate the service (cloud hosting and storage, email delivery, analytics), where required by law, or with your consent. Other users see only your nickname, avatar, school and listings; your email is never shown publicly.
 
-**Retention and deletion**: data is kept while your account exists. You can delete your account in Account Settings or email [services@unibooks.app](mailto:services@unibooks.app); you can also revoke access at [myaccount.google.com/permissions](https://myaccount.google.com/permissions).
+**Retention and deletion**: data is kept while your account exists. Deleting your account in Account Settings immediately deletes your Google link record (all Google user data above) and clears your email, name and avatar. You can also email [services@unibooks.app](mailto:services@unibooks.app); you can also revoke access at [myaccount.google.com/permissions](https://myaccount.google.com/permissions).
 
-**Google API Services User Data Policy (Limited Use)**: UniBooks' use and transfer of information received from Google APIs will adhere to the [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy), including the Limited Use requirements. We do not use Google user data to develop, improve or train generalized AI or machine-learning models.
+**Google API Services User Data Policy (Limited Use)**: UniBooks' use and transfer of information received from Google APIs will adhere to the [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy), including the Limited Use requirements. We do not use Google user data to develop, improve or train generalized AI or machine-learning models. If we ever want to use Google user data in a new way, we will update this policy and ask for your consent first.
 
 **Security and your rights**: HTTPS everywhere, hashed passwords, least-privilege access. Under Taiwan's Personal Data Protection Act you may request access, copies, correction, deletion, or that we stop processing your data; we respond within 15 days.
 
@@ -73,23 +73,61 @@ UniBooks（以下簡稱「本平台」）重視你的隱私。本聲明說明我
 
 ## 二之一、Google 使用者資料
 
-UniBooks 提供「使用 Google 登入」功能。以下說明我們如何存取、使用、分享、保存與刪除 Google 使用者資料。
+UniBooks 提供「使用 Google 登入」功能（Google Identity Services）。本節說明我們如何存取、使用、分享、保護、保存與刪除 Google 使用者資料。若你不使用 Google 登入，我們不會取得任何 Google 使用者資料。
 
-**我們存取哪些 Google 資料**：僅限你授權的基本登入範圍——`openid`、`email`（電子郵件地址）與 `profile`（姓名與頭像）。我們**不會**存取你的 Gmail 信件、Google 雲端硬碟、聯絡人、日曆或任何其他 Google 服務的資料。
+### 我們存取哪些 Google 資料
 
-**我們如何使用**：
+我們僅請求基本登入範圍：`openid`、`email`、`profile`。你同意後，Google 會提供一份登入憑證（ID token），我們從中取得並儲存：
 
-- 電子郵件與 Google 帳號識別碼：建立帳號、識別你的身分、讓你下次能登入，以及寄送與你帳號有關的通知信。
-- 姓名與頭像：顯示於你的個人資料與刊登頁面，讓交易對象辨識你。你可隨時在帳號設定中修改。
-- 我們不會使用這些資料投放廣告、建立跨網站的使用者輪廓，或用於上述以外的目的。
+| 資料 | 用途 |
+|---|---|
+| Google 帳號識別碼（`sub`） | 把你的 Google 帳號連結到 UniBooks 帳號，讓你下次能以 Google 登入 |
+| 電子郵件地址及其是否已經 Google 驗證（`email`、`email_verified`） | 建立與識別帳號；只接受 Google 已驗證的信箱，防止冒用；寄送與帳號有關的通知信 |
+| 名字與姓氏（`given_name`、`family_name`） | 預設為你的顯示名稱，可在帳號設定中修改 |
+| 大頭貼網址（`picture`） | 預設為你的頭像；每次以 Google 登入時會同步更新 |
+| 登入憑證中的其他基本欄位（如語系 `locale`、Google Workspace 網域 `hd`、憑證核發與到期時間） | 與上述資料一併保存在帳號連結紀錄中，僅作為連結紀錄的一部分，不作其他用途 |
 
-**我們如何分享**：不會出售、出租或轉讓 Google 使用者資料。僅在下列情形分享：提供服務所必要的服務供應商（如雲端主機、電子郵件寄送，受契約約束）、依法令要求，或經你同意。除上述外，資料不會提供給第三方。
+我們**不會**存取你的 Gmail、Google 雲端硬碟、聯絡人、日曆、YouTube 或任何其他 Google 服務的資料，也不會取得你的 Google 密碼。
 
-**我們如何保存與保護**：資料儲存於受存取控管的資料庫，全程 HTTPS 加密傳輸，僅授權人員得存取（詳見第六節）。
+### 我們如何使用
 
-**保存期間與刪除**：Google 使用者資料於你的帳號存續期間保存。你可以在帳號設定中直接刪除帳號，或來信 [services@unibooks.app](mailto:services@unibooks.app) 請求刪除；你也可以隨時至 [Google 帳戶權限頁面](https://myaccount.google.com/permissions)撤銷 UniBooks 的存取權。刪除後依第四節處理。
+Google 使用者資料**僅**用於上表所列、提供登入與帳號功能的目的。我們**不會**：
 
-**Limited Use 聲明**：UniBooks 使用與傳輸從 Google API 取得的資訊，將遵守 [Google API 服務使用者資料政策](https://developers.google.com/terms/api-services-user-data-policy)，包括其中的 Limited Use（有限使用）規定。我們不會將 Google 使用者資料用於開發、改善或訓練通用型人工智慧或機器學習模型，也不允許人員閱讀這些資料，除非取得你的同意、為安全目的（如調查濫用）、遵守法令，或資料已去識別化且僅用於內部營運。
+- 將 Google 使用者資料用於廣告，包括個人化或指定對象廣告（本平台依學校顯示的校園內容，依據的是你的 `.edu.tw` 學生身分驗證資料，與 Google 資料無關）；
+- 出售 Google 使用者資料，或提供給資料仲介、廣告平台或資訊轉售商；
+- 用以建立使用者輪廓、判斷信用或放貸資格；
+- 用於開發、改善或訓練通用型人工智慧或機器學習模型。
+
+### 我們如何分享
+
+我們不會出售、出租或轉讓 Google 使用者資料。僅在下列情形分享：
+
+- **服務供應商**：代我們提供雲端主機、資料庫主機與電子郵件寄送的供應商，僅為運作本服務而處理，並受契約保密義務約束；
+- **其他使用者**：你的顯示名稱與頭像會顯示在你的個人資料與刊登頁面上；你的電子郵件地址與 Google 帳號識別碼不會公開；
+- **依法令要求**，或**經你明確同意**。
+
+Google 使用者資料**不會**傳送給 Google Analytics，也不會提供給任何廣告主。
+
+### 我們如何保護
+
+- 全程以 HTTPS 加密傳輸；
+- ID token 由伺服器以 Google 公開金鑰驗證簽章後才接受；
+- 資料儲存於受存取控管的資料庫，依最小權限原則僅限授權人員存取；
+- 詳見第六節。
+
+### 保存期間與刪除
+
+- Google 使用者資料於你的 UniBooks 帳號存續期間保存。
+- **刪除帳號**：你可以在「帳號設定」中直接刪除帳號。刪除時我們會**立即**刪除你的 Google 帳號連結紀錄（包含上表所有 Google 資料），並清除帳號上的電子郵件、姓名與頭像，同時撤銷所有登入憑證。
+- **只撤銷 Google 存取權**：你可以隨時到 [Google 帳戶權限頁面](https://myaccount.google.com/permissions)移除 UniBooks。之後我們無法再以 Google 登入你的帳號，也不會再收到你的任何 Google 資料；若要一併刪除已儲存的資料，請刪除帳號或來信 [services@unibooks.app](mailto:services@unibooks.app)，我們會於 15 日內處理。
+
+### Limited Use 聲明
+
+UniBooks 使用與傳輸從 Google API 取得的資訊，將遵守 [Google API 服務使用者資料政策](https://developers.google.com/terms/api-services-user-data-policy)，包括其中的 Limited Use（有限使用）規定。我們不允許人員閱讀 Google 使用者資料，除非取得你的明確同意、為安全目的（如調查濫用）所必要、為遵守法令，或資料已彙總並去識別化且僅用於內部營運。
+
+### 用途變更
+
+若我們日後要以本節未載明的方式使用 Google 使用者資料，會先更新本聲明並通知你，並在使用前**取得你的同意**。
 
 ---
 
@@ -102,7 +140,7 @@ UniBooks 提供「使用 Google 登入」功能。以下說明我們如何存取
 3. **安全與防詐**：偵測冒用帳號、重複註冊、垃圾訊息、濫用與違反條款的行為，處理檢舉與申訴。
 4. **產品改善與統計**：以匿名化或彙總資料分析功能使用情形，改善搜尋與使用體驗。
 5. **法令遵循**：回應主管機關或司法機關依法提出的要求，以及保護本平台與使用者的合法權益。
-6. **廣告（如有）**：僅在你同意，或使用去識別化、彙總資料的前提下，顯示與校園生活相關的內容。我們不會將可識別你身分的資料提供給廣告主。
+6. **校園內容與廣告版位（如有）**：依你的學校或地區顯示與校園生活相關的內容，所依據的是學生身分驗證資料。我們不會將可識別你身分的資料提供給廣告主，也**不會**將 Google 使用者資料用於任何廣告。
 
 我們不會將你的資料用於上述以外的目的；若日後有新目的，會先取得你的同意或依法通知。
 
@@ -111,7 +149,7 @@ UniBooks 提供「使用 Google 登入」功能。以下說明我們如何存取
 ## 四、資料保存期間
 
 - **帳號與刊登資料**：於帳號存續期間保存。
-- **帳號刪除**：你申請刪除帳號後，我們會停止顯示你的個人資料與刊登；為處理爭議、防止濫用及遵守法令，部分交易與檢舉紀錄會在必要期間內以去識別化或受限制存取的方式保留，期滿後刪除或匿名化。
+- **帳號刪除**：你刪除帳號後，我們會立即下架你的刊登、刪除 Google 帳號連結紀錄、學生身分驗證紀錄與到貨通知，並清除帳號上的電子郵件、姓名與頭像；為處理爭議、防止濫用及遵守法令，部分交易與檢舉紀錄會在必要期間內以去識別化或受限制存取的方式保留，期滿後刪除或匿名化。
 - **聊天訊息**：於對話存續期間保存；帳號刪除後依前項處理。
 - **登入憑證**：至到期或登出為止。
 - **伺服器紀錄**：僅在資安與除錯所需的合理期間內保存。
@@ -125,12 +163,12 @@ UniBooks 提供「使用 Google 登入」功能。以下說明我們如何存取
 
 1. **其他使用者**：為完成交易，你的暱稱、頭像、學校與刊登內容、書況照片會對其他使用者可見；聊天內容僅有對話雙方（及在處理檢舉時必要的管理人員）可見。你的電子郵件不會公開顯示。
 2. **服務供應商（受託處理者）**：我們委託下列類型的供應商代為處理資料，並要求其僅為本平台服務目的使用並採取適當保護措施：
-   - 雲端與網路服務：Cloudflare（網站託管、內容傳遞、檔案儲存 R2、即時聊天服務），以及後端主機服務供應商。
+   - 雲端與網路服務：網站託管、內容傳遞、檔案儲存與即時聊天服務（Cloudflare），以及後端主機與資料庫主機服務。
    - 電子郵件寄送服務。
-   - Google（登入驗證、Google Analytics、Google Books）。
+   - Google：登入驗證、Google Analytics（僅匿名使用統計，不含 Google 使用者資料或帳號資料）、Google Books（書目查詢，不含使用者資料）。
 3. **經你同意**。
 4. **法令要求**：依法院命令、主管機關依法之要求，或為保護他人生命、身體、財產安全所必要。
-5. **去識別化統計**：無法識別特定個人的彙總資料。
+5. **去識別化統計**：無法識別特定個人的彙總資料（不包含 Google 使用者資料）。
 
 ### 跨境傳輸
 

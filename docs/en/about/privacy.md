@@ -48,23 +48,61 @@ We **do not** ask for or store credit-card, bank or other financial data. The Pl
 
 ## 2A. Google User Data
 
-UniBooks offers "Sign in with Google". This section explains how we access, use, share, store and delete Google user data.
+UniBooks offers "Sign in with Google" (Google Identity Services). This section explains how we access, use, share, protect, retain and delete Google user data. If you do not use Google sign-in, we receive no Google user data.
 
-**What Google data we access**: only the basic sign-in scopes you approve — `openid`, `email` (your email address) and `profile` (your name and avatar). We do **not** access your Gmail messages, Google Drive files, contacts, calendar or data from any other Google service.
+### What Google data we access
 
-**How we use it**:
+We request only the basic sign-in scopes `openid`, `email` and `profile`. After you consent, Google gives us a sign-in credential (ID token), from which we receive and store:
 
-- Email address and Google account identifier: to create your account, recognize you, let you sign in again, and send account-related emails.
-- Name and avatar: shown on your profile and listings so trading partners can recognize you. You can change them in Account Settings at any time.
-- We do not use this data for advertising, for building cross-site profiles, or for any purpose beyond those above.
+| Data | Purpose |
+|---|---|
+| Google account ID (`sub`) | Links your Google account to your UniBooks account so you can sign in with Google again |
+| Email address and whether Google has verified it (`email`, `email_verified`) | Creating and identifying your account; we accept only Google-verified addresses to prevent impersonation; sending account-related emails |
+| Given and family name (`given_name`, `family_name`) | Your default display name, which you can change in Account Settings |
+| Profile picture URL (`picture`) | Your default avatar; refreshed each time you sign in with Google |
+| Other basic ID-token claims (such as `locale`, Google Workspace domain `hd`, issue and expiry time) | Stored with the above as part of the account-link record only; not used for anything else |
 
-**How we share it**: we do not sell, rent or transfer Google user data. We share it only with service providers necessary to run the service (such as cloud hosting and email delivery, bound by contract), where required by law, or with your consent. It is not provided to any other third party.
+We do **not** access your Gmail, Google Drive, contacts, calendar, YouTube or any other Google service, and we never receive your Google password.
 
-**How we store and protect it**: in access-controlled databases, transmitted over HTTPS, and accessible only to authorized staff (see Section 6).
+### How we use it
 
-**Retention and deletion**: Google user data is kept while your account exists. You can delete your account in Account Settings, or email [services@unibooks.app](mailto:services@unibooks.app) to request deletion. You can also revoke UniBooks' access any time at your [Google Account permissions page](https://myaccount.google.com/permissions). After deletion we follow Section 4.
+Google user data is used **only** for the sign-in and account purposes in the table above. We do **not**:
 
-**Limited Use disclosure**: UniBooks' use and transfer of information received from Google APIs will adhere to the [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy), including the Limited Use requirements. We do not use Google user data to develop, improve or train generalized AI or machine-learning models, and we do not allow humans to read it unless we have your consent, it is necessary for security purposes (such as investigating abuse), it is required by law, or the data is de-identified and used only for internal operations.
+- use Google user data for advertising, including personalized or targeted ads (campus content we show by school is based on your `.edu.tw` student verification, not on Google data);
+- sell Google user data or give it to data brokers, ad platforms or information resellers;
+- use it to build user profiles or determine credit-worthiness or lending eligibility;
+- use it to develop, improve or train generalized AI or machine-learning models.
+
+### How we share it
+
+We do not sell, rent or transfer Google user data. We share it only:
+
+- with **service providers** that run cloud hosting, database hosting and email delivery for us, solely to operate the service and under contractual confidentiality;
+- with **other users**, who see your display name and avatar on your profile and listings — your email address and Google account ID are never public;
+- where **required by law**, or with your **explicit consent**.
+
+Google user data is **not** sent to Google Analytics and is not given to any advertiser.
+
+### How we protect it
+
+- HTTPS for all traffic;
+- ID tokens are accepted only after the server verifies their signature against Google's public keys;
+- stored in access-controlled databases with least-privilege access limited to authorized staff;
+- see Section 6.
+
+### Retention and deletion
+
+- Google user data is kept while your UniBooks account exists.
+- **Deleting your account**: you can delete it directly in Account Settings. We **immediately** delete your Google account-link record (all Google data in the table above), clear the email, name and avatar on your account, and revoke all sign-in tokens.
+- **Revoking Google access only**: you can remove UniBooks at your [Google Account permissions page](https://myaccount.google.com/permissions) at any time. We can then no longer sign you in with Google and receive no further Google data from you. To also delete what we have stored, delete your account or email [services@unibooks.app](mailto:services@unibooks.app); we act within 15 days.
+
+### Limited Use disclosure
+
+UniBooks' use and transfer of information received from Google APIs will adhere to the [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy), including the Limited Use requirements. We do not allow humans to read Google user data unless we have your explicit consent, it is necessary for security purposes (such as investigating abuse), it is required by law, or the data is aggregated and de-identified and used only for internal operations.
+
+### Changes in use
+
+If we ever want to use Google user data in a way not described in this section, we will update this policy, notify you, and **obtain your consent** before doing so.
 
 ---
 
@@ -77,7 +115,7 @@ We use your data only for these specific purposes:
 3. **Safety and anti-fraud**: detecting impersonation, duplicate accounts, spam, abuse and violations of our Terms; handling reports and appeals.
 4. **Improving the product**: analyzing anonymized or aggregated usage data to improve search and usability.
 5. **Legal compliance**: responding to lawful requests from authorities and protecting the rights of the Platform and its users.
-6. **Advertising (if any)**: only with your consent or using de-identified, aggregated data. We never give advertisers data that identifies you.
+6. **Campus content and ad slots (if any)**: showing campus-life content based on your school or region, using your student verification data. We never give advertisers data that identifies you, and we **never** use Google user data for any advertising.
 
 We will not use your data for other purposes; if a new purpose arises we will obtain your consent or notify you as required by law.
 
@@ -86,7 +124,7 @@ We will not use your data for other purposes; if a new purpose arises we will ob
 ## 4. Retention
 
 - **Account and listing data**: kept while your account exists.
-- **Account deletion**: after you request deletion we stop displaying your profile and listings. To handle disputes, prevent abuse and comply with law, some transaction and report records are retained for as long as necessary in de-identified or access-restricted form, then deleted or anonymized.
+- **Account deletion**: when you delete your account we immediately remove your listings, delete your Google account-link record, student verification records and restock alerts, and clear the email, name and avatar on your account. To handle disputes, prevent abuse and comply with law, some transaction and report records are retained for as long as necessary in de-identified or access-restricted form, then deleted or anonymized.
 - **Chat messages**: kept while the conversation exists; after account deletion, handled as above.
 - **Sign-in credentials**: until they expire or you sign out.
 - **Server logs**: kept only for a reasonable period needed for security and debugging.
@@ -100,12 +138,12 @@ We **do not sell or rent** your personal data. We share it only in these cases:
 
 1. **Other users**: to complete transactions, your nickname, avatar, school, listings and condition photos are visible to other users. Chat content is visible only to the participants (and to administrators where needed to handle a report). Your email address is not shown publicly.
 2. **Service providers (processors)**: we use providers to process data on our behalf and require them to use it only for the Platform and to protect it appropriately:
-   - Cloud and network services: Cloudflare (hosting, content delivery, R2 file storage, real-time chat) and our backend hosting provider.
+   - Cloud and network services: website hosting, content delivery, file storage and real-time chat (Cloudflare), plus backend and database hosting.
    - Email delivery services.
-   - Google (sign-in, Google Analytics, Google Books).
+   - Google: sign-in, Google Analytics (anonymous usage statistics only — no Google user data or account data), Google Books (catalog lookups, no user data).
 3. **With your consent.**
 4. **Legal requirements**: court orders, lawful requests from authorities, or where necessary to protect someone's life, body or property.
-5. **De-identified statistics**: aggregated data that cannot identify a person.
+5. **De-identified statistics**: aggregated data that cannot identify a person (never including Google user data).
 
 ### International transfers
 
