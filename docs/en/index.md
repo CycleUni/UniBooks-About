@@ -36,3 +36,14 @@ features:
     title: Report & Dispute System
     details: Flag suspicious listings or sellers with one click. Dedicated support handles disputes to keep our campus marketplace safe and fair.
 ---
+
+## What is UniBooks
+
+UniBooks is a second-hand textbook search and matching platform built for **university students in Taiwan**. The app is at [unibooks.app](https://unibooks.app).
+
+- **Purpose**: students find the textbooks they need by ISBN, title or course, list books they no longer use, and arrange on-campus meetups with classmates through in-app chat. The platform only matches people — it never handles payments.
+- **Features that need an account**: browsing books requires no sign-in; listing, ordering and chat require an account created with a school `.edu.tw` email or a Google account.
+- **Sign in with Google**: if you choose it, UniBooks receives only your email address, name and avatar, used solely to create and identify your account. We do not access any other Google data. See the [Privacy Policy](/en/about/privacy).
+
+[Privacy Policy](/en/about/privacy) | [Terms of Service](/en/about/terms) | Contact: [services@unibooks.app](mailto:services@unibooks.app)
+

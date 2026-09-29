@@ -36,3 +36,14 @@ features:
     title: 檢舉與申訴機制
     details: 遇到問題賣家或刊登一鍵檢舉。專人處理爭議交易，維護高品質的使用體驗。
 ---
+
+## UniBooks 是什麼
+
+UniBooks 是專為**台灣大專院校學生**打造的二手教科書搜尋與媒合平台。網站位於 [unibooks.app](https://unibooks.app)。
+
+- **用途**：讓學生以 ISBN、書名或課程名稱找到所需教科書，並刊登自己不再使用的書，與同校同學透過站內訊息約定校園面交。平台只提供資訊媒合，不經手任何買賣款項。
+- **需要登入的功能**：瀏覽書籍不需登入；刊登、下單與聊天需要以 `.edu.tw` 學校信箱或 Google 帳號建立帳號。
+- **Google 登入**：若你選擇以 Google 登入，UniBooks 僅取得你的電子郵件、姓名與頭像，用來建立並識別你的帳號，不會存取任何其他 Google 資料。詳見[隱私權聲明](/about/privacy)。
+
+[隱私權聲明](/about/privacy) ｜ [服務條款](/about/terms) ｜ 聯絡：[services@unibooks.app](mailto:services@unibooks.app)
+
