@@ -46,6 +46,28 @@ We **do not** ask for or store credit-card, bank or other financial data. The Pl
 
 ---
 
+## 2A. Google User Data
+
+UniBooks offers "Sign in with Google". This section explains how we access, use, share, store and delete Google user data.
+
+**What Google data we access**: only the basic sign-in scopes you approve — `openid`, `email` (your email address) and `profile` (your name and avatar). We do **not** access your Gmail messages, Google Drive files, contacts, calendar or data from any other Google service.
+
+**How we use it**:
+
+- Email address and Google account identifier: to create your account, recognize you, let you sign in again, and send account-related emails.
+- Name and avatar: shown on your profile and listings so trading partners can recognize you. You can change them in Account Settings at any time.
+- We do not use this data for advertising, for building cross-site profiles, or for any purpose beyond those above.
+
+**How we share it**: we do not sell, rent or transfer Google user data. We share it only with service providers necessary to run the service (such as cloud hosting and email delivery, bound by contract), where required by law, or with your consent. It is not provided to any other third party.
+
+**How we store and protect it**: in access-controlled databases, transmitted over HTTPS, and accessible only to authorized staff (see Section 6).
+
+**Retention and deletion**: Google user data is kept while your account exists. You can delete your account in Account Settings, or email [services@unibooks.app](mailto:services@unibooks.app) to request deletion. You can also revoke UniBooks' access any time at your [Google Account permissions page](https://myaccount.google.com/permissions). After deletion we follow Section 4.
+
+**Limited Use disclosure**: UniBooks' use and transfer of information received from Google APIs will adhere to the [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy), including the Limited Use requirements. We do not use Google user data to develop, improve or train generalized AI or machine-learning models, and we do not allow humans to read it unless we have your consent, it is necessary for security purposes (such as investigating abuse), it is required by law, or the data is de-identified and used only for internal operations.
+
+---
+
 ## 3. Why We Use Your Data
 
 We use your data only for these specific purposes:

@@ -12,6 +12,9 @@ hero:
     - theme: alt
       text: View FAQ
       link: /en/about/faq
+    - theme: alt
+      text: Privacy Policy
+      link: /en/about/privacy
 
 features:
   - icon: 📚

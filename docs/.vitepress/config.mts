@@ -93,7 +93,7 @@ export default defineConfig({
         ],
 
         footer: {
-          message: '© 2026 UniBooks. All rights reserved.',
+          message: '© 2026 UniBooks. All rights reserved.<br><a href="/about/privacy">隱私權聲明</a> · <a href="/about/terms">服務條款</a>',
         },
 
         returnToTopLabel: '回到頂部',
@@ -164,7 +164,7 @@ export default defineConfig({
         ],
 
         footer: {
-          message: '© 2026 UniBooks. All rights reserved.',
+          message: '© 2026 UniBooks. All rights reserved.<br><a href="/en/about/privacy">Privacy Policy</a> · <a href="/en/about/terms">Terms of Service</a>',
         }
       }
     }

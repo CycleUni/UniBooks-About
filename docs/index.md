@@ -12,6 +12,9 @@ hero:
     - theme: alt
       text: 常見問題
       link: /about/faq
+    - theme: alt
+      text: 隱私權聲明
+      link: /about/privacy
 
 features:
   - icon: 📚
