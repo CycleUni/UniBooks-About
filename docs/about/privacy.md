@@ -8,6 +8,31 @@ UniBooks（以下簡稱「本平台」）重視你的隱私。本聲明說明我
 
 ---
 
+## English Summary
+
+**UniBooks** ([unibooks.app](https://unibooks.app)) is a second-hand textbook search and matching platform for university students in Taiwan. This page is the privacy policy of the UniBooks app. The complete English policy is at [Privacy Policy (English)](/en/about/privacy); the full Traditional Chinese policy follows below.
+
+**Data we collect**
+- *Account data*: email address, name or nickname, avatar, language preferences.
+- *Google user data* (only if you choose "Sign in with Google"): your Google account identifier, email address, name and profile picture, via the `openid`, `email` and `profile` scopes. We do not access Gmail, Google Drive, contacts, calendar or any other Google data.
+- *Student verification data*: school, `.edu.tw` school email, verification records.
+- *Content you create*: book listings, condition photos, orders, in-app chat messages, restock alerts, reports.
+- *Technical data*: IP address, browser and device type, pages visited, cookies, and anonymous usage statistics (Google Analytics).
+
+**How we use it**: to create and secure your account, verify student status, show listings, match buyers and sellers, deliver chat and notification emails, prevent fraud and abuse, and improve the service. We do not use Google user data for advertising or for any other purpose.
+
+**How we share it**: we do not sell, rent or transfer personal data. We share it only with the service providers needed to operate the service (cloud hosting and storage, email delivery, analytics), where required by law, or with your consent. Other users see only your nickname, avatar, school and listings; your email is never shown publicly.
+
+**Retention and deletion**: data is kept while your account exists. You can delete your account in Account Settings or email [services@unibooks.app](mailto:services@unibooks.app); you can also revoke access at [myaccount.google.com/permissions](https://myaccount.google.com/permissions).
+
+**Google API Services User Data Policy (Limited Use)**: UniBooks' use and transfer of information received from Google APIs will adhere to the [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy), including the Limited Use requirements. We do not use Google user data to develop, improve or train generalized AI or machine-learning models.
+
+**Security and your rights**: HTTPS everywhere, hashed passwords, least-privilege access. Under Taiwan's Personal Data Protection Act you may request access, copies, correction, deletion, or that we stop processing your data; we respond within 15 days.
+
+**Contact**: [services@unibooks.app](mailto:services@unibooks.app)
+
+---
+
 ## 一、資料控制者與聯絡方式
 
 本平台由 UniBooks 開發團隊營運。關於個人資料的任何問題或請求，請來信：[services@unibooks.app](mailto:services@unibooks.app)。
