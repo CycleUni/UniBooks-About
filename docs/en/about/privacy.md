@@ -1,71 +1,157 @@
 # Privacy Policy
 
-CycleUni respects your privacy. This page describes how we collect, manage and use information that you give the platform.
+> Last updated: September 30, 2026
+
+UniBooks (the "Platform") respects your privacy. This policy explains what data we collect, why, how we use and protect it, and the rights you have. It is written in accordance with Taiwan's Personal Data Protection Act ("PDPA") and related regulations.
+
+By using the Platform you acknowledge that you have read this policy. If you do not agree, please stop using the Platform.
 
 ---
 
-## 1. Policy Scope
+## 1. Who We Are
 
-This applies to all service usage offered by CycleUni under Taiwan's Personal Data Protection (PDPA).
-
----
-
-## 2. Data Collection
-
-### 2.1 Account
-
-Your .edu.tw email plus the name of the university attended - they needn't be.
-
-### 2.2 Book & Transaction
-
-Your listing content (incl. pictures, conditions, pricing) and transaction records are kept.
-
-### 2.3 Messages
-
-Direct chats are stored.
-
-### 2.4 Technical
-
-Cookies, IP address, device, and pages visited are logged via standard site-analysis.
+The Platform is operated by the UniBooks development team. For any question or request about your personal data, write to [services@unibooks.app](mailto:services@unibooks.app).
 
 ---
 
-## 3. Data Use
+## 2. What We Collect
 
-1. To provide services — our core platform.
-2. To improve products (broken-down analytics).
-3. To serve ads to audiences who proactively agreed in during registration (Anonymous aggregated form).
+### 2.1 Data you provide
 
----
+| Category | Details | When |
+|---|---|---|
+| Account | Email, name or nickname, avatar, language preferences | Sign-up, profile edits |
+| Sign-in | Password (stored only as a one-way hash); if you use Google sign-in, the Google account identifier, email, name and avatar Google shares with us | Sign-up, sign-in |
+| Student verification | School, `.edu.tw` school email, verification time and per-semester re-verification records; for manual review, the supporting information and request notes you submit | Verification |
+| Listings | Title, ISBN, price, condition grade and description, condition photos | Creating a listing |
+| Transactions | Orders, order status, cancellations, completion confirmations | Ordering, meetups |
+| Communications | In-app chat messages and timestamps | Messaging other users |
+| Restock alerts | Books you add to alerts or your wishlist | Using restock alerts |
+| Reports & appeals | Reported party, reason, attachments and handling records | Filing a report |
+| Support | Content of emails you send us | Contacting us |
 
-## 4. Sharing
+### 2.2 Data collected automatically
 
-We never sell your personal data. Exceptions require one of: (a) you've explicitly permitted; (b) required by law; (c) payment partners; (d) anonymous statistics.
+- **Device and connection data**: IP address, browser and operating system, screen and language settings, referrer and pages visited, visit times.
+- **Sign-in state**: to keep you signed in and prevent account takeover we store sign-in credentials (refresh tokens) and their expiry.
+- **Cookies and similar technologies**: see Section 7.
+- **Usage statistics**: anonymous statistics (page views, feature-usage trends) via Google Analytics 4.
 
----
+### 2.3 Data from third parties
 
-## 5. Safety
+- **Google sign-in**: if you choose it, we receive basic account information from Google.
+- **Book metadata**: ISBN metadata comes from public sources such as Google Books and contains no user data.
 
-Hash-based passwords different store, HTTPS always, limited access internally.
-
----
-
-## 6. Cookies
-
-We use essential ones; you can block in browser but few functions disappear.
-
----
-
-## 7. Your PDPA Rights
-
-You may request: access, correction, delete or stop processing. We respond from fifteen days.
-
----
-
-## 8. Policy Changes
-
-We update this document by replacing the copy here. Check again recommendation.
+We **do not** ask for or store credit-card, bank or other financial data. The Platform never handles payments between buyers and sellers.
 
 ---
 
-Last updated: July 2026
+## 3. Why We Use Your Data
+
+We use your data only for these specific purposes:
+
+1. **Providing and operating the service**: account creation and verification, student-status checks and semester re-verification, book search and listings, matching and chat, order flow, restock alerts.
+2. **Notifications**: verification emails, password resets, order updates, restock alerts and, if enabled, new-message emails (you can turn these off in settings).
+3. **Safety and anti-fraud**: detecting impersonation, duplicate accounts, spam, abuse and violations of our Terms; handling reports and appeals.
+4. **Improving the product**: analyzing anonymized or aggregated usage data to improve search and usability.
+5. **Legal compliance**: responding to lawful requests from authorities and protecting the rights of the Platform and its users.
+6. **Advertising (if any)**: only with your consent or using de-identified, aggregated data. We never give advertisers data that identifies you.
+
+We will not use your data for other purposes; if a new purpose arises we will obtain your consent or notify you as required by law.
+
+---
+
+## 4. Retention
+
+- **Account and listing data**: kept while your account exists.
+- **Account deletion**: after you request deletion we stop displaying your profile and listings. To handle disputes, prevent abuse and comply with law, some transaction and report records are retained for as long as necessary in de-identified or access-restricted form, then deleted or anonymized.
+- **Chat messages**: kept while the conversation exists; after account deletion, handled as above.
+- **Sign-in credentials**: until they expire or you sign out.
+- **Server logs**: kept only for a reasonable period needed for security and debugging.
+- **Google Analytics data**: kept per the Google Analytics retention setting and not linked to your account data.
+
+---
+
+## 5. Sharing and Disclosure
+
+We **do not sell or rent** your personal data. We share it only in these cases:
+
+1. **Other users**: to complete transactions, your nickname, avatar, school, listings and condition photos are visible to other users. Chat content is visible only to the participants (and to administrators where needed to handle a report). Your email address is not shown publicly.
+2. **Service providers (processors)**: we use providers to process data on our behalf and require them to use it only for the Platform and to protect it appropriately:
+   - Cloud and network services: Cloudflare (hosting, content delivery, R2 file storage, real-time chat) and our backend hosting provider.
+   - Email delivery services.
+   - Google (sign-in, Google Analytics, Google Books).
+3. **With your consent.**
+4. **Legal requirements**: court orders, lawful requests from authorities, or where necessary to protect someone's life, body or property.
+5. **De-identified statistics**: aggregated data that cannot identify a person.
+
+### International transfers
+
+Our providers' servers may be located outside Taiwan (for example in the United States or elsewhere), so your data may be transferred and processed abroad. We choose providers with appropriate safeguards and follow the PDPA.
+
+---
+
+## 6. Security
+
+We take reasonable technical and organizational measures, including:
+
+- HTTPS enforced site-wide;
+- passwords stored only as one-way hashes, so we cannot see your original password;
+- short-lived access tokens with rotating refresh tokens;
+- least-privilege access to databases and the admin console, limited to authorized staff;
+- uploaded images kept in managed object storage.
+
+No internet transmission or electronic storage is completely secure. Please keep your password safe and do not share your account. If you suspect account takeover or a data leak, contact us immediately.
+
+---
+
+## 7. Cookies and Similar Technologies
+
+| Type | Purpose | Can you disable it? |
+|---|---|---|
+| Essential storage | Keeping you signed in, language and theme preferences, security | Some features will not work without it |
+| Analytics | Anonymous usage statistics via Google Analytics | Yes — via browser settings or Google's opt-out add-on |
+
+You can delete or block cookies and local storage in your browser settings. We do not use cookies for cross-site tracking or personalized advertising.
+
+---
+
+## 8. Your Rights
+
+Under the PDPA you may, regarding your own personal data:
+
+- request access or review;
+- request a copy;
+- request supplementation or correction;
+- request that we stop collecting, processing or using it;
+- request deletion.
+
+**How to exercise them**: most data can be viewed and edited in Account Settings, including notification preferences and account deletion. For other requests, email [services@unibooks.app](mailto:services@unibooks.app) from your registered address so we can verify your identity. We respond within **15 days**, and if we need more time we will tell you why.
+
+We may decline part of a request where the law requires or business operation necessitates it (for example records needed to resolve a dispute), and will explain the reason. If you withhold required data or ask us to delete or stop using data we need, we may be unable to provide all or part of the service.
+
+---
+
+## 9. Minors
+
+The Platform is for students and alumni of Taiwanese colleges and universities. We do not knowingly collect personal data from anyone under 18; if you are a minor, please use the Platform with your legal guardian's consent. If you believe we collected a minor's data without such consent, contact us and we will handle it promptly.
+
+---
+
+## 10. Third-Party Links
+
+The Platform may link to third-party sites. They have their own privacy policies and we do not control their content or practices.
+
+---
+
+## 11. Changes to This Policy
+
+We may revise this policy for legal, service or operational reasons. Changes are posted on this page with an updated "Last updated" date; for material changes we will notify you through an announcement or your registered email. Continuing to use the Platform after a change means you accept it.
+
+---
+
+## 12. Contact
+
+Questions, comments or complaints about this policy: [services@unibooks.app](mailto:services@unibooks.app). See also our [Terms of Service](/en/about/terms).
+
+> The Traditional Chinese version prevails if the two versions differ.

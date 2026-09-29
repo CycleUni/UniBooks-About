@@ -1,9 +1,8 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  title: 'CycleUni 易校網',
+  title: 'UniBooks',
   description: '台灣大專院校二手教科書搜尋與媒合平台',
-  base: '/About/',
   cleanUrls: true,
 
   head: [
@@ -14,7 +13,7 @@ export default defineConfig({
     root: {
       label: '中文 (繁體)',
       lang: 'zh-TW',
-      title: 'CycleUni 易校網',
+      title: 'UniBooks',
       description: '台灣大專院校二手教科書搜尋與媒合平台',
       themeConfig: {
         nav: [
@@ -94,7 +93,7 @@ export default defineConfig({
         ],
 
         footer: {
-          message: '© 2026 CycleUni 易校網. All rights reserved.',
+          message: '© 2026 UniBooks. All rights reserved.',
         },
 
         returnToTopLabel: '回到頂部',
@@ -108,7 +107,7 @@ export default defineConfig({
       label: 'English',
       lang: 'en-US',
       link: '/en/',
-      title: 'CycleUni',
+      title: 'UniBooks',
       description: 'Taiwan university second-hand textbook search and matching platform',
       themeConfig: {
         nav: [
@@ -165,7 +164,7 @@ export default defineConfig({
         ],
 
         footer: {
-          message: '© 2026 CycleUni. All rights reserved.',
+          message: '© 2026 UniBooks. All rights reserved.',
         }
       }
     }

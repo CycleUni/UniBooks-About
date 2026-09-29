@@ -2,9 +2,9 @@
 
 ---
 
-## 1. What is CycleUni?
+## 1. What is UniBooks?
 
-CycleUni is a second-hand textbook search and matching platform designed for university students in Taiwan. It uses ISBN-based book records so all sellers of the same title appear on one listings, making it simple to search, compare prices, and read condition details.
+UniBooks is a second-hand textbook search and matching platform designed for university students in Taiwan. It uses ISBN-based book records so all sellers of the same title appear on one listings, making it simple to search, compare prices, and read condition details.
 
 ## 2. Is it free?
 

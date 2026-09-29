@@ -1,6 +1,6 @@
-# Trading on CycleUni
+# Trading on UniBooks
 
-CycleUni keeps it simple: **all trades happen in person, on campus.**
+UniBooks keeps it simple: **all trades happen in person, on campus.**
 
 ## Why Meetups
 

@@ -1,18 +1,18 @@
 # About Us
 
-CycleUni is a second-hand textbook search and matching platform built specifically for university students in Taiwan.
+UniBooks is a second-hand textbook search and matching platform built specifically for university students in Taiwan.
 
 ## Our Mission
 
 Taiwan's university students face the same challenge every semester: required textbooks cost thousands of NTD, used for just one semester, then pile up on shelves. Searching for used copies on Facebook groups and Dcard means wading through a flood of unstructured posts. Sellers don't know who needs their books; buyers can't find those who are selling.
 
-CycleUni exists to solve this. We use an ISBN-structured book database to bring all sellers of the same textbook onto a single page, letting students search, compare prices, and connect in minutes.
+UniBooks exists to solve this. We use an ISBN-structured book database to bring all sellers of the same textbook onto a single page, letting students search, compare prices, and connect in minutes.
 
 ## Core Values
 
 ### One Book, One Page
 
-Unlike general e-commerce platforms which treat each listing as a separate product, CycleUni groups every seller of the same textbook onto one shared book page. Whether there are 1 or 10 sellers offering "Calculus 8th Edition", you can compare conditions and prices on one screen.
+Unlike general e-commerce platforms which treat each listing as a separate product, UniBooks groups every seller of the same textbook onto one shared book page. Whether there are 1 or 10 sellers offering "Calculus 8th Edition", you can compare conditions and prices on one screen.
 
 ### Instant Out-of-Stock Alerts
 
@@ -36,7 +36,7 @@ Books — particularly textbooks — are identified by ISBN, making it possible 
 
 ## The Team
 
-CycleUni was started by a group of sistems/computer science university students who lived through semester after semester of "senpai, do you still have this book?"
+UniBooks was started by a group of sistems/computer science university students who lived through semester after semester of "senpai, do you still have this book?"
 
 The tech stack: Angular frontend and Django backend, deployed over Cloudflare Pages and hosted with Vercel. The source is entirely open in GitHub.
 

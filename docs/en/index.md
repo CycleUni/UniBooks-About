@@ -2,7 +2,7 @@
 layout: home
 
 hero:
-  name: "CycleUni"
+  name: "UniBooks"
   text: "Your Second-hand Textbook Marketplace"
   tagline: "Taiwan's university textbook search and matching platform"
   actions:

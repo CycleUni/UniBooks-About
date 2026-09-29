@@ -4,7 +4,7 @@ Not seeing the book you need? Set a notification and let that platform track it.
 
 ## What Is the Waitlist?
 
-CycleUni's waitlist is your subscription for any book that hasn't yet been listed for sale. Click "Notify Me" to register, and when that book appears, you'll be among the first to know.
+UniBooks's waitlist is your subscription for any book that hasn't yet been listed for sale. Click "Notify Me" to register, and when that book appears, you'll be among the first to know.
 
 ## How to Subscribe
 
@@ -39,4 +39,4 @@ Go to **Personal Page** → **My Subscriptions** to view, add, or prune what you
 - **Condition doesn't satisfy?** Skip the listing and wait for the next.
 - **Same campus works better** — a seller from your school means you can meet quickly — the time faster.
 
-CycleUni informs everyone on the waitlist equally, but the first mover reserves the book.
+UniBooks informs everyone on the waitlist equally, but the first mover reserves the book.

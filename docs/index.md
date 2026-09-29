@@ -2,7 +2,7 @@
 layout: home
 
 hero:
-  name: "CycleUni 易校網"
+  name: "UniBooks"
   text: "全台學生的二手教科書夥伴"
   tagline: "台灣大專院校二手教科書 ISBN 搜尋與媒合平台"
   actions:
