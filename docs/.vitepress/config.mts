@@ -18,8 +18,12 @@ export default defineConfig({
   description: 'UniBooks 使用指南、常見問題、服務條款與隱私權聲明',
   cleanUrls: true,
 
+  // Served by the app, so the two sites share one set of icons.
   head: [
-    ['link', { rel: 'icon', href: '/favicon.ico' }]
+    ['link', { rel: 'icon', href: `${APP_ORIGIN}/favicon.ico`, sizes: '48x48' }],
+    ['link', { rel: 'icon', type: 'image/png', sizes: '48x48', href: `${APP_ORIGIN}/icons/favicon-48x48.png` }],
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: `${APP_ORIGIN}/icons/favicon.svg` }],
+    ['link', { rel: 'apple-touch-icon', sizes: '180x180', href: `${APP_ORIGIN}/apple-touch-icon.png` }]
   ],
 
   sitemap: {
