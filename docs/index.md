@@ -1,5 +1,13 @@
 ---
 layout: home
+titleTemplate: false
+# Help-centre home: kept out of the index so a search for the brand finds
+# unibooks.app. Crawlers still follow its links, and people (and Google's
+# OAuth review, which uses this page as the app home page) can still open it.
+head:
+  - - meta
+    - name: robots
+      content: noindex, follow
 
 hero:
   name: "UniBooks"
@@ -7,7 +15,10 @@ hero:
   tagline: "台灣大專院校二手教科書 ISBN 搜尋與媒合平台"
   actions:
     - theme: brand
-      text: 開始使用
+      text: 前往 UniBooks
+      link: https://unibooks.app/
+    - theme: alt
+      text: 新手上路
       link: /guide/getting-started
     - theme: alt
       text: 常見問題
@@ -39,7 +50,7 @@ features:
 
 ## UniBooks 是什麼
 
-UniBooks 是專為**台灣大專院校學生**打造的二手教科書搜尋與媒合平台。網站位於 [unibooks.app](https://unibooks.app)。
+UniBooks 是專為**台灣大專院校學生**打造的二手教科書搜尋與媒合平台。本站是 UniBooks 的說明中心；平台本身請前往 **[UniBooks — unibooks.app](https://unibooks.app/)**。
 
 - **用途**：讓學生以 ISBN、書名或課程名稱找到所需教科書，並刊登自己不再使用的書，與同校同學透過站內訊息約定校園面交。平台只提供資訊媒合，不經手任何買賣款項。
 - **需要登入的功能**：瀏覽書籍不需登入；刊登、下單與聊天需要以 `.edu.tw` 學校信箱或 Google 帳號建立帳號。

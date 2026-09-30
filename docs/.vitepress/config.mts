@@ -1,20 +1,58 @@
 import { defineConfig } from 'vitepress'
 
+const SITE_ORIGIN = 'https://about.unibooks.app'
+const APP_ORIGIN = 'https://unibooks.app'
+
+// This site is the help centre for unibooks.app, not the product. Its titles
+// say so, its home pages stay out of the index (see their frontmatter) and
+// every page names the app's Organization as publisher, so a search for the
+// brand lands on the app rather than here.
+function pageUrl(relativePath: string): string {
+  const path = relativePath.replace(/(^|\/)index\.md$/, '$1').replace(/\.md$/, '')
+  return `${SITE_ORIGIN}/${path}`
+}
+
 export default defineConfig({
-  title: 'UniBooks',
-  description: '台灣大專院校二手教科書搜尋與媒合平台',
+  title: 'UniBooks 說明中心',
+  titleTemplate: ':title | UniBooks 說明中心',
+  description: 'UniBooks 使用指南、常見問題、服務條款與隱私權聲明',
   cleanUrls: true,
 
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }]
   ],
 
+  sitemap: {
+    hostname: `${SITE_ORIGIN}/`,
+    // The home pages are noindex; listing them would contradict that.
+    transformItems: (items) => items.filter((item) => item.url !== '' && item.url !== 'en/')
+  },
+
+  transformHead({ pageData, title, description }) {
+    const url = pageUrl(pageData.relativePath)
+    const ldJson = {
+      '@context': 'https://schema.org',
+      '@type': 'WebPage',
+      name: title,
+      description,
+      url,
+      isPartOf: { '@type': 'WebSite', name: 'UniBooks 說明中心', url: `${SITE_ORIGIN}/` },
+      publisher: { '@type': 'Organization', '@id': `${APP_ORIGIN}/#organization`, name: 'UniBooks', url: `${APP_ORIGIN}/` },
+      about: { '@id': `${APP_ORIGIN}/#organization` }
+    }
+    return [
+      ['link', { rel: 'canonical', href: url }],
+      ['script', { type: 'application/ld+json' }, JSON.stringify(ldJson).replace(/</g, '\\u003c')]
+    ]
+  },
+
   locales: {
     root: {
       label: '中文 (繁體)',
       lang: 'zh-TW',
-      title: 'UniBooks',
-      description: '台灣大專院校二手教科書搜尋與媒合平台',
+      title: 'UniBooks 說明中心',
+      titleTemplate: ':title | UniBooks 說明中心',
+      description: 'UniBooks 使用指南、常見問題、服務條款與隱私權聲明',
       themeConfig: {
         nav: [
           { text: '首頁', link: '/' },
@@ -36,7 +74,8 @@ export default defineConfig({
               { text: '服務條款', link: '/about/terms' },
               { text: '隱私權聲明', link: '/about/privacy' }
             ]
-          }
+          },
+          { text: '前往 UniBooks', link: `${APP_ORIGIN}/` }
         ],
 
         sidebar: {
@@ -107,8 +146,9 @@ export default defineConfig({
       label: 'English',
       lang: 'en-US',
       link: '/en/',
-      title: 'UniBooks',
-      description: 'Taiwan university second-hand textbook search and matching platform',
+      title: 'UniBooks Help Center',
+      titleTemplate: ':title | UniBooks Help Center',
+      description: 'UniBooks user guide, FAQ, terms of service and privacy policy',
       themeConfig: {
         nav: [
           { text: 'Home', link: '/en/' },
@@ -130,7 +170,8 @@ export default defineConfig({
               { text: 'Terms of Service', link: '/en/about/terms' },
               { text: 'Privacy', link: '/en/about/privacy' }
             ]
-          }
+          },
+          { text: 'Open UniBooks', link: `${APP_ORIGIN}/` }
         ],
 
         sidebar: {

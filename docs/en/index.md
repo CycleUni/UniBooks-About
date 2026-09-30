@@ -1,5 +1,13 @@
 ---
 layout: home
+titleTemplate: false
+# Help-centre home: kept out of the index so a search for the brand finds
+# unibooks.app. Crawlers still follow its links, and people (and Google's
+# OAuth review, which uses this page as the app home page) can still open it.
+head:
+  - - meta
+    - name: robots
+      content: noindex, follow
 
 hero:
   name: "UniBooks"
@@ -7,6 +15,9 @@ hero:
   tagline: "Taiwan's university textbook search and matching platform"
   actions:
     - theme: brand
+      text: Open UniBooks
+      link: https://unibooks.app/
+    - theme: alt
       text: Get Started
       link: /en/guide/getting-started
     - theme: alt
@@ -39,7 +50,7 @@ features:
 
 ## What is UniBooks
 
-UniBooks is a second-hand textbook search and matching platform built for **university students in Taiwan**. The app is at [unibooks.app](https://unibooks.app).
+UniBooks is a second-hand textbook search and matching platform built for **university students in Taiwan**. This site is its help center; the app itself is at **[UniBooks — unibooks.app](https://unibooks.app/)**.
 
 - **Purpose**: students find the textbooks they need by ISBN, title or course, list books they no longer use, and arrange on-campus meetups with classmates through in-app chat. The platform only matches people — it never handles payments.
 - **Features that need an account**: browsing books requires no sign-in; listing, ordering and chat require an account created with a school `.edu.tw` email or a Google account.
