@@ -1,6 +1,6 @@
 # Privacy Policy
 
-> Last updated: September 30, 2026
+> Last updated: October 7, 2026
 
 UniBooks (the "Platform") respects your privacy. This policy explains what data we collect, why, how we use and protect it, and the rights you have. It is written in accordance with Taiwan's Personal Data Protection Act ("PDPA") and related regulations.
 
@@ -36,6 +36,7 @@ The Platform is operated by the UniBooks development team. For any question or r
 - **Sign-in state**: to keep you signed in and prevent account takeover we store sign-in credentials (refresh tokens) and their expiry.
 - **Cookies and similar technologies**: see Section 7.
 - **Usage statistics**: anonymous statistics (page views, feature-usage trends) via Google Analytics 4.
+- **Error and performance monitoring**: when something breaks, we record the error message, the page it happened on, browser and device type, and a little page-performance data, using Sentry. If you are signed in, the report carries your **user ID** so we can tell how many people a problem affects; it does **not** include your email, name or chat content. Sessions that hit an error (and a small share of other sessions) keep a replay of the page, in which all text and input is masked and images are not recorded.
 
 ### 2.3 Data from third parties
 
@@ -128,6 +129,7 @@ We will not use your data for other purposes; if a new purpose arises we will ob
 - **Chat messages**: kept while the conversation exists; after account deletion, handled as above.
 - **Sign-in credentials**: until they expire or you sign out.
 - **Server logs**: kept only for a reasonable period needed for security and debugging.
+- **Error reports**: kept for the retention period of our error-monitoring service (Sentry), then deleted automatically.
 - **Google Analytics data**: kept per the Google Analytics retention setting and not linked to your account data.
 
 ---
@@ -140,6 +142,7 @@ We **do not sell or rent** your personal data. We share it only in these cases:
 2. **Service providers (processors)**: we use providers to process data on our behalf and require them to use it only for the Platform and to protect it appropriately:
    - Cloud and network services: website hosting, content delivery, file storage and real-time chat (Cloudflare), plus backend and database hosting.
    - Email delivery services.
+   - Error monitoring (Sentry): receives the error reports above, used to find and fix bugs; its servers are in the United States.
    - Google: sign-in, Google Analytics (anonymous usage statistics only — no Google user data or account data), Google Books (catalog lookups, no user data).
 3. **With your consent.**
 4. **Legal requirements**: court orders, lawful requests from authorities, or where necessary to protect someone's life, body or property.

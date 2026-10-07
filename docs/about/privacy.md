@@ -1,6 +1,6 @@
 # 隱私權聲明
 
-> 最後更新日期：2026 年 9 月 30 日
+> 最後更新日期：2026 年 10 月 7 日
 
 UniBooks（以下簡稱「本平台」）重視你的隱私。本聲明說明我們蒐集哪些資料、為何蒐集、如何使用與保護，以及你可以行使哪些權利。本聲明依中華民國《個人資料保護法》（以下簡稱「個資法」）及相關法規訂定。
 
@@ -18,10 +18,11 @@ UniBooks（以下簡稱「本平台」）重視你的隱私。本聲明說明我
 - *Student verification data*: school, `.edu.tw` school email, verification records.
 - *Content you create*: book listings, condition photos, orders, in-app chat messages, restock alerts, reports.
 - *Technical data*: IP address, browser and device type, pages visited, cookies, and anonymous usage statistics (Google Analytics).
+- *Error reports*: when something breaks, an error report (Sentry) tied to your account by user ID only — never your email or name.
 
 **How we use it**: to create and secure your account, verify student status, show listings, match buyers and sellers, deliver chat and notification emails, prevent fraud and abuse, and improve the service. Google user data is used only for sign-in and your account profile. It is never used for advertising (including targeted ads), never sold, never sent to Google Analytics, and never used to train AI/ML models.
 
-**How we share it**: we do not sell, rent or transfer personal data. We share it only with the service providers needed to operate the service (cloud hosting and storage, email delivery, analytics), where required by law, or with your consent. Other users see only your nickname, avatar, school and listings; your email is never shown publicly.
+**How we share it**: we do not sell, rent or transfer personal data. We share it only with the service providers needed to operate the service (cloud hosting and storage, email delivery, analytics, error monitoring), where required by law, or with your consent. Other users see only your nickname, avatar, school and listings; your email is never shown publicly.
 
 **Retention and deletion**: data is kept while your account exists. Deleting your account in Account Settings immediately deletes your Google link record (all Google user data above) and clears your email, name and avatar. You can also email [services@unibooks.app](mailto:services@unibooks.app); you can also revoke access at [myaccount.google.com/permissions](https://myaccount.google.com/permissions).
 
@@ -61,6 +62,7 @@ UniBooks（以下簡稱「本平台」）重視你的隱私。本聲明說明我
 - **登入狀態**：為維持登入與防範盜用，我們會保存登入憑證（refresh token）與其到期時間。
 - **Cookie 與類似技術**：見第七節。
 - **使用統計**：以 Google Analytics 4 蒐集匿名化的使用統計（頁面瀏覽、功能使用趨勢）。
+- **錯誤與效能監控**：程式發生錯誤時，我們以 Sentry 記錄錯誤訊息、發生的頁面、瀏覽器與裝置類型，以及少量頁面效能資料。若你已登入，報告會附上你的**使用者編號**，以便判斷問題影響多少人；**不包含**電子郵件、姓名或聊天內容。發生錯誤的工作階段（以及少數一般工作階段）會留下操作回放，回放中的文字與輸入內容一律遮蔽、圖片不錄。
 
 ### 2.3 來自第三方的資料
 
@@ -153,6 +155,7 @@ UniBooks 使用與傳輸從 Google API 取得的資訊，將遵守 [Google API �
 - **聊天訊息**：於對話存續期間保存；帳號刪除後依前項處理。
 - **登入憑證**：至到期或登出為止。
 - **伺服器紀錄**：僅在資安與除錯所需的合理期間內保存。
+- **錯誤報告**：依錯誤監控服務（Sentry）之保存期間保存，期滿自動刪除。
 - **Google Analytics 資料**：依 Google Analytics 設定之保存期間，且不與你的帳號資料串接。
 
 ---
@@ -165,6 +168,7 @@ UniBooks 使用與傳輸從 Google API 取得的資訊，將遵守 [Google API �
 2. **服務供應商（受託處理者）**：我們委託下列類型的供應商代為處理資料，並要求其僅為本平台服務目的使用並採取適當保護措施：
    - 雲端與網路服務：網站託管、內容傳遞、檔案儲存與即時聊天服務（Cloudflare），以及後端主機與資料庫主機服務。
    - 電子郵件寄送服務。
+   - 錯誤監控服務（Sentry）：接收上述錯誤報告，用於找出並修正程式錯誤，伺服器位於美國。
    - Google：登入驗證、Google Analytics（僅匿名使用統計，不含 Google 使用者資料或帳號資料）、Google Books（書目查詢，不含使用者資料）。
 3. **經你同意**。
 4. **法令要求**：依法院命令、主管機關依法之要求，或為保護他人生命、身體、財產安全所必要。
