@@ -1,6 +1,6 @@
 # Privacy Policy
 
-> Last updated: October 7, 2026
+> Last updated: October 18, 2026
 
 UniBooks (the "Platform") respects your privacy. This policy explains what data we collect, why, how we use and protect it, and the rights you have. It is written in accordance with Taiwan's Personal Data Protection Act ("PDPA") and related regulations.
 
@@ -22,6 +22,7 @@ The Platform is operated by the UniBooks development team. For any question or r
 |---|---|---|
 | Account | Email, name or nickname, avatar, language preferences | Sign-up, profile edits |
 | Sign-in | Password (stored only as a one-way hash); if you use Google sign-in, the Google account identifier, email, name and avatar Google shares with us | Sign-up, sign-in |
+| Passkeys | If you add a passkey: its public key, credential ID, a name you give it, device type and whether it is synced or backed up, the authenticator model ID (AAGUID), a sign-in counter, and creation and last-use times. Your fingerprint, face or screen-lock data is checked only on your device, never leaves it, and is never received by us | Adding a passkey, signing in with one |
 | Student verification | School, `.edu.tw` school email, verification time and per-semester re-verification records; for manual review, the supporting information and request notes you submit | Verification |
 | Listings | Title, ISBN, price, condition grade and description, condition photos | Creating a listing |
 | Transactions | Orders, order status, cancellations, completion confirmations | Ordering, meetups |
@@ -34,6 +35,7 @@ The Platform is operated by the UniBooks development team. For any question or r
 
 - **Device and connection data**: IP address, browser and operating system, screen and language settings, referrer and pages visited, visit times.
 - **Sign-in state**: to keep you signed in and prevent account takeover we store sign-in credentials (refresh tokens) and their expiry.
+- **Bot protection**: when you sign in, sign up or ask for a password-reset link, we use Cloudflare Turnstile to tell people from automated scripts. For this, Cloudflare may process your IP address and signals from your browser and device, and sends us the result of the check; we receive no additional personal data from it. See Cloudflare's [privacy policy](https://www.cloudflare.com/privacypolicy/) and [Turnstile Privacy Addendum](https://www.cloudflare.com/turnstile-privacy-policy/).
 - **Cookies and similar technologies**: see Section 7.
 - **Usage statistics**: anonymous statistics (page views, feature-usage trends) via Google Analytics 4.
 - **Error and performance monitoring**: when something breaks, we record the error message, the page it happened on, browser and device type, and a little page-performance data, using Sentry. If you are signed in, the report carries your **user ID** so we can tell how many people a problem affects; it does **not** include your email, name or chat content. Sessions that hit an error (and a small share of other sessions) keep a replay of the page, in which all text and input is masked and images are not recorded.
@@ -125,7 +127,7 @@ We will not use your data for other purposes; if a new purpose arises we will ob
 ## 4. Retention
 
 - **Account and listing data**: kept while your account exists.
-- **Account deletion**: when you delete your account we immediately remove your listings, delete your Google account-link record, student verification records and restock alerts, and clear the email, name and avatar on your account. To handle disputes, prevent abuse and comply with law, some transaction and report records are retained for as long as necessary in de-identified or access-restricted form, then deleted or anonymized.
+- **Account deletion**: when you delete your account we immediately remove your listings, delete your Google account-link record, passkeys, student verification records and restock alerts, and clear the email, name and avatar on your account. To handle disputes, prevent abuse and comply with law, some transaction and report records are retained for as long as necessary in de-identified or access-restricted form, then deleted or anonymized.
 - **Chat messages**: kept while the conversation exists; after account deletion, handled as above.
 - **Sign-in credentials**: until they expire or you sign out.
 - **Server logs**: kept only for a reasonable period needed for security and debugging.
@@ -140,7 +142,7 @@ We **do not sell or rent** your personal data. We share it only in these cases:
 
 1. **Other users**: to complete transactions, your nickname, avatar, school, listings and condition photos are visible to other users. Chat content is visible only to the participants (and to administrators where needed to handle a report). Your email address is not shown publicly.
 2. **Service providers (processors)**: we use providers to process data on our behalf and require them to use it only for the Platform and to protect it appropriately:
-   - Cloud and network services: website hosting, content delivery, file storage and real-time chat (Cloudflare), plus backend and database hosting.
+   - Cloud and network services: website hosting, content delivery, file storage, real-time chat and bot protection (Cloudflare, including Cloudflare Turnstile), plus backend and database hosting.
    - Email delivery services.
    - Error monitoring (Sentry): receives the error reports above, used to find and fix bugs; its servers are in the United States.
    - Google: sign-in, Google Analytics (anonymous usage statistics only — no Google user data or account data), Google Books (catalog lookups, no user data).
@@ -160,6 +162,8 @@ We take reasonable technical and organizational measures, including:
 
 - HTTPS enforced site-wide;
 - passwords stored only as one-way hashes, so we cannot see your original password;
+- passkeys store only a public key; the private key stays on your device or in your password manager, and we cannot obtain it;
+- bot protection on sign-in, sign-up and password-reset requests;
 - short-lived access tokens with rotating refresh tokens;
 - least-privilege access to databases and the admin console, limited to authorized staff;
 - uploaded images kept in managed object storage.
@@ -174,6 +178,8 @@ No internet transmission or electronic storage is completely secure. Please keep
 |---|---|---|
 | Essential storage | Keeping you signed in, language and theme preferences, security | Some features will not work without it |
 | Analytics | Anonymous usage statistics via Google Analytics | Yes — via browser settings or Google's opt-out add-on |
+
+Bot protection (Cloudflare Turnstile) may store or read a small amount of data in your browser to tell whether you are a person; see Cloudflare's explanation.
 
 You can delete or block cookies and local storage in your browser settings. We do not use cookies for cross-site tracking or personalized advertising.
 

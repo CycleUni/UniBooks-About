@@ -1,6 +1,6 @@
 # 隱私權聲明
 
-> 最後更新日期：2026 年 10 月 7 日
+> 最後更新日期：2026 年 10 月 18 日
 
 UniBooks（以下簡稱「本平台」）重視你的隱私。本聲明說明我們蒐集哪些資料、為何蒐集、如何使用與保護，以及你可以行使哪些權利。本聲明依中華民國《個人資料保護法》（以下簡稱「個資法」）及相關法規訂定。
 
@@ -15,9 +15,11 @@ UniBooks（以下簡稱「本平台」）重視你的隱私。本聲明說明我
 **Data we collect**
 - *Account data*: email address, name or nickname, avatar, language preferences.
 - *Google user data* (only if you choose "Sign in with Google", scopes `openid`, `email`, `profile`): Google account ID (`sub`), email address and whether Google verified it, given and family name, profile picture URL, and the other basic claims in the ID token (such as locale and issue/expiry time). We do not access Gmail, Google Drive, contacts, calendar or any other Google data.
+- *Passkey data* (only if you add a passkey): the passkey's public key, credential ID, a name you give it, device type, whether it is synced or backed up, the authenticator model ID (AAGUID), a sign-in counter, and creation and last-use times. Your fingerprint, face or screen-lock data never leaves your device and we never receive it.
 - *Student verification data*: school, `.edu.tw` school email, verification records.
 - *Content you create*: book listings, condition photos, orders, in-app chat messages, restock alerts, reports.
 - *Technical data*: IP address, browser and device type, pages visited, cookies, and anonymous usage statistics (Google Analytics).
+- *Bot protection*: sign-in, sign-up and password-reset requests are checked with Cloudflare Turnstile to tell people from automated scripts. Cloudflare may process your IP address and browser and device signals for this; see Cloudflare's privacy policy and Turnstile Privacy Addendum.
 - *Error reports*: when something breaks, an error report (Sentry) tied to your account by user ID only — never your email or name.
 
 **How we use it**: to create and secure your account, verify student status, show listings, match buyers and sellers, deliver chat and notification emails, prevent fraud and abuse, and improve the service. Google user data is used only for sign-in and your account profile. It is never used for advertising (including targeted ads), never sold, never sent to Google Analytics, and never used to train AI/ML models.
@@ -48,6 +50,7 @@ UniBooks（以下簡稱「本平台」）重視你的隱私。本聲明說明我
 |---|---|---|
 | 帳號資料 | 電子郵件、姓名或暱稱、頭像、語言偏好 | 註冊、編輯個人資料 |
 | 登入資料 | 密碼（僅保存單向雜湊值）；若使用 Google 登入，則為 Google 提供的帳號識別碼、電子郵件、姓名與頭像 | 註冊、登入 |
+| 通行密鑰（passkey）資料 | 若你新增通行密鑰：該通行密鑰的公開金鑰、憑證編號、你為它取的名稱、裝置類型與是否已同步備份、驗證器型號識別碼（AAGUID）、登入計數器，以及建立與最後使用時間。你的指紋、臉部或螢幕鎖定資料只在你的裝置上驗證，不會離開裝置，我們也不會取得 | 新增通行密鑰、以通行密鑰登入 |
 | 學生身分驗證資料 | 學校名稱、`.edu.tw` 學校信箱、驗證時間、每學期重新驗證紀錄；若申請人工審核，則包含你提交的佐證資料與申請說明 | 身分驗證、重新驗證 |
 | 刊登資料 | 書名、ISBN、價格、書況分級與說明、書況照片 | 刊登書籍 |
 | 交易資料 | 訂單、訂單狀態、取消紀錄、交易完成確認 | 下單、面交、取消 |
@@ -60,6 +63,7 @@ UniBooks（以下簡稱「本平台」）重視你的隱私。本聲明說明我
 
 - **裝置與連線資料**：IP 位址、瀏覽器與作業系統類型、螢幕與語言設定、來源與造訪頁面、造訪時間。
 - **登入狀態**：為維持登入與防範盜用，我們會保存登入憑證（refresh token）與其到期時間。
+- **人機驗證**：登入、註冊與申請重設密碼時，我們使用 Cloudflare Turnstile 判斷操作者是否為真人，以防範自動化程式的濫用。為此，Cloudflare 可能處理你的 IP 位址與瀏覽器、裝置的相關訊號，並將驗證結果回傳給我們；我們不會因此取得額外的個人資料。Cloudflare 的處理方式請見其[隱私權政策](https://www.cloudflare.com/privacypolicy/)與 [Turnstile 隱私權補充條款](https://www.cloudflare.com/turnstile-privacy-policy/)。
 - **Cookie 與類似技術**：見第七節。
 - **使用統計**：以 Google Analytics 4 蒐集匿名化的使用統計（頁面瀏覽、功能使用趨勢）。
 - **錯誤與效能監控**：程式發生錯誤時，我們以 Sentry 記錄錯誤訊息、發生的頁面、瀏覽器與裝置類型，以及少量頁面效能資料。若你已登入，報告會附上你的**使用者編號**，以便判斷問題影響多少人；**不包含**電子郵件、姓名或聊天內容。發生錯誤的工作階段（以及少數一般工作階段）會留下操作回放，回放中的文字與輸入內容一律遮蔽、圖片不錄。
@@ -151,7 +155,7 @@ UniBooks 使用與傳輸從 Google API 取得的資訊，將遵守 [Google API �
 ## 四、資料保存期間
 
 - **帳號與刊登資料**：於帳號存續期間保存。
-- **帳號刪除**：你刪除帳號後，我們會立即下架你的刊登、刪除 Google 帳號連結紀錄、學生身分驗證紀錄與到貨通知，並清除帳號上的電子郵件、姓名與頭像；為處理爭議、防止濫用及遵守法令，部分交易與檢舉紀錄會在必要期間內以去識別化或受限制存取的方式保留，期滿後刪除或匿名化。
+- **帳號刪除**：你刪除帳號後，我們會立即下架你的刊登、刪除 Google 帳號連結紀錄、通行密鑰、學生身分驗證紀錄與到貨通知，並清除帳號上的電子郵件、姓名與頭像；為處理爭議、防止濫用及遵守法令，部分交易與檢舉紀錄會在必要期間內以去識別化或受限制存取的方式保留，期滿後刪除或匿名化。
 - **聊天訊息**：於對話存續期間保存；帳號刪除後依前項處理。
 - **登入憑證**：至到期或登出為止。
 - **伺服器紀錄**：僅在資安與除錯所需的合理期間內保存。
@@ -166,7 +170,7 @@ UniBooks 使用與傳輸從 Google API 取得的資訊，將遵守 [Google API �
 
 1. **其他使用者**：為完成交易，你的暱稱、頭像、學校與刊登內容、書況照片會對其他使用者可見；聊天內容僅有對話雙方（及在處理檢舉時必要的管理人員）可見。你的電子郵件不會公開顯示。
 2. **服務供應商（受託處理者）**：我們委託下列類型的供應商代為處理資料，並要求其僅為本平台服務目的使用並採取適當保護措施：
-   - 雲端與網路服務：網站託管、內容傳遞、檔案儲存與即時聊天服務（Cloudflare），以及後端主機與資料庫主機服務。
+   - 雲端與網路服務：網站託管、內容傳遞、檔案儲存、即時聊天與人機驗證（Cloudflare Turnstile）服務（Cloudflare），以及後端主機與資料庫主機服務。
    - 電子郵件寄送服務。
    - 錯誤監控服務（Sentry）：接收上述錯誤報告，用於找出並修正程式錯誤，伺服器位於美國。
    - Google：登入驗證、Google Analytics（僅匿名使用統計，不含 Google 使用者資料或帳號資料）、Google Books（書目查詢，不含使用者資料）。
@@ -186,6 +190,8 @@ UniBooks 使用與傳輸從 Google API 取得的資訊，將遵守 [Google API �
 
 - 全站強制使用 HTTPS 加密傳輸；
 - 密碼僅以單向雜湊方式儲存，我們無法得知你的原始密碼；
+- 通行密鑰只保存公開金鑰，私密金鑰留在你的裝置或你使用的密碼管理工具中，我們無法取得；
+- 登入、註冊與申請重設密碼時以人機驗證防範自動化程式；
 - 登入憑證採短效存取權杖搭配可輪替的更新憑證；
 - 資料庫與後台採最小權限原則，僅限授權人員存取；
 - 使用者上傳圖片存放於受管理的物件儲存空間。
@@ -200,6 +206,8 @@ UniBooks 使用與傳輸從 Google API 取得的資訊，將遵守 [Google API �
 |---|---|---|
 | 必要性儲存 | 維持登入狀態、語言與外觀偏好、安全防護 | 關閉後部分功能將無法使用 |
 | 分析 | Google Analytics 匿名使用統計 | 可透過瀏覽器設定或 Google 提供的退出外掛停用 |
+
+人機驗證（Cloudflare Turnstile）為判斷操作者是否為真人，可能在你的瀏覽器儲存或讀取少量資料；詳見 Cloudflare 的說明。
 
 你可以透過瀏覽器設定刪除或阻擋 Cookie 與本機儲存（localStorage）。本平台不使用 Cookie 進行跨網站追蹤或個人化廣告。
 
