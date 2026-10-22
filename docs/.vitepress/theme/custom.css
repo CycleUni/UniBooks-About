@@ -497,6 +497,12 @@ input, select, textarea {
   text-underline-offset: 2px;
 }
 
+/* The pages put a `---` before every `##`, and the default theme already
+   rules a line above each h2, so sections were split by two lines. */
+.vp-doc hr:has(+ h2) {
+  display: none;
+}
+
 /* Motion preference */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
