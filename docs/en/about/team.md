@@ -37,9 +37,7 @@ const members = [
     <template #title>Contact</template>
     <template #lead>
       For questions about your account, a transaction or your personal data, write to
-      <a href="mailto:services@unibooks.app">services@unibooks.app</a>
-      so the team can handle it together; please don't contact individual members directly. Code and issue reports live on
-      <a href="https://github.com/CycleUni/UniBooks">GitHub</a>.
+      <a href="mailto:services@unibooks.app">services@unibooks.app</a>.
     </template>
   </VPTeamPageSection>
 </VPTeamPage>

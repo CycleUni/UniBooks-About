@@ -37,9 +37,7 @@ const members = [
     <template #title>聯絡我們</template>
     <template #lead>
       帳號、交易或個人資料相關問題，請寄信至
-      <a href="mailto:services@unibooks.app">services@unibooks.app</a>，
-      由團隊統一處理；請不要私下聯絡個別成員。程式碼與問題回報在
-      <a href="https://github.com/CycleUni/UniBooks">GitHub</a>。
+      <a href="mailto:services@unibooks.app">services@unibooks.app</a>。
     </template>
   </VPTeamPageSection>
 </VPTeamPage>
