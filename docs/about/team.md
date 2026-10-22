@@ -12,13 +12,14 @@ import {
   VPTeamMembers
 } from 'vitepress/theme'
 
-// Only what each member already shows publicly on GitHub: handle, avatar,
-// profile link. No real names, schools or photos beyond that.
+// Keep each entry to what the member chose to share: name, avatar, GitHub
+// link and a short line about themself. No contact details or personal photos.
 const members = [
   {
     avatar: 'https://github.com/kenchou2006.png',
-    name: 'kenchou2006',
+    name: '周恭煥',
     title: '產品開發',
+    desc: '致理科技大學資訊管理系大二學生，希望讓校園裡的資源流通得更順暢，所以開發了 UniBooks。',
     links: [{ icon: 'github', link: 'https://github.com/kenchou2006' }]
   }
 ]
