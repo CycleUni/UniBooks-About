@@ -23,7 +23,12 @@ export default defineConfig({
     ['link', { rel: 'icon', href: `${APP_ORIGIN}/favicon.ico`, sizes: '48x48' }],
     ['link', { rel: 'icon', type: 'image/png', sizes: '48x48', href: `${APP_ORIGIN}/icons/favicon-48x48.png` }],
     ['link', { rel: 'icon', type: 'image/svg+xml', href: `${APP_ORIGIN}/icons/favicon.svg` }],
-    ['link', { rel: 'apple-touch-icon', sizes: '180x180', href: `${APP_ORIGIN}/apple-touch-icon.png` }]
+    ['link', { rel: 'apple-touch-icon', sizes: '180x180', href: `${APP_ORIGIN}/apple-touch-icon.png` }],
+    // Same fonts as the app (client/src/index.html): the large CJK families
+    // only above 901px, so phones keep their system fonts.
+    ['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }],
+    ['link', { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@700&display=swap', media: '(min-width: 901px)' }],
+    ['link', { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&text=UniBooks&display=swap' }]
   ],
 
   sitemap: {

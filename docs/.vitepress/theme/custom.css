@@ -1,16 +1,508 @@
+/**
+ * UniBooks Help Centre (VitePress) Theme
+ * Mapped from client/src/styles.css design tokens.
+ */
+
 :root {
-  --vp-c-brand-1: #1E5C46;
-  --vp-c-brand-2: #14402F;
-  --vp-c-brand-3: #1E5C46;
-  --vp-c-brand-soft: rgba(30, 92, 70, 0.14);
-  --vp-c-text-1: #1F2933;
-  --vp-c-text-2: #6B7280;
+  /* UniBooks Raw Tokens — Light */
+  --ink: #1F2933;
+  --ink-soft: #4A555F;
+  --muted: #647079;
+  --paper: #FFFFFF;
+  --paper-warm: #F7F5F0;
+  --line: #D9D4CB;
+  --line-strong: #948A76;
+  --surface-raised: #FFFFFF;
+  --surface-raised-border: #D9D4CB;
+  --surface-card: #FFFFFF;
+
+  --accent: #1E5C46;
+  --accent-ink: #14402F;
+  --accent-soft: #E7F0EA;
+
+  --brand-warm: #C8763F;
+  --brand-warm-soft: #FBF0E4;
+
+  --flag: #A34A2A;
+  --flag-light: #FFF0EB;
+  --flag-border: #FFD6CC;
+
+  --warn-bg: #FBEFE4;
+  --warn-ink: #7A3A1F;
+
+  --danger: #B3261E;
+  --danger-light: #FBEAE8;
+
+  --success: #2E7D57;
+  --success-light: #EBF5F0;
+
+  --info-bg: #EFF6FF;
+  --info-ink: #1D4ED8;
+  --info-border: #BFDBFE;
+
+  --sponsor: #8C6B3F;
+
+  --btn-primary-bg: #1E5C46;
+  --btn-primary-ink: #FFFFFF;
+  --btn-primary-bg-hover: #14402F;
+
+  --shadow-card: 0 1px 3px rgba(31, 41, 51, 0.10);
+  --shadow-card-lg: 0 2px 4px rgba(31, 41, 51, 0.06), 0 12px 24px -8px rgba(31, 41, 51, 0.18);
+  --radius-xs: 2px;
+  --radius-sm: 3px;
+  --radius-control: 6px;
+  --radius-lg: 8px;
+
+  --motion-fast: 0.15s;
+  --motion-base: 0.2s;
+
+  /* VitePress Functional Token Mappings — Light */
+  --vp-c-text-1: var(--ink);
+  --vp-c-text-2: var(--ink-soft);
+  --vp-c-text-3: var(--muted);
+  --vp-c-neutral: var(--ink);
+  --vp-c-neutral-inverse: var(--paper);
+
+  --vp-c-bg: var(--paper);
+  --vp-c-bg-alt: var(--paper-warm);
+  --vp-c-bg-elv: var(--surface-raised);
+  --vp-c-bg-soft: var(--paper-warm);
+
+  --vp-c-border: var(--line-strong);
+  --vp-c-divider: var(--line);
+  --vp-c-gutter: var(--line);
+
+  --vp-c-brand-1: var(--accent);
+  --vp-c-brand-2: var(--accent-ink);
+  --vp-c-brand-3: var(--accent);
+  --vp-c-brand-soft: var(--accent-soft);
+  --vp-c-brand: var(--vp-c-brand-1);
+
+  --vp-home-hero-name-color: var(--accent);
+  --vp-home-hero-name-background: transparent;
+
+  /* VitePress Status Mappings */
+  --vp-c-tip-1: var(--accent);
+  --vp-c-tip-2: var(--accent-ink);
+  --vp-c-tip-3: var(--accent);
+  --vp-c-tip-soft: var(--accent-soft);
+
+  --vp-c-note-1: var(--accent);
+  --vp-c-note-2: var(--accent-ink);
+  --vp-c-note-3: var(--accent);
+  --vp-c-note-soft: var(--accent-soft);
+
+  --vp-c-warning-1: var(--warn-ink);
+  --vp-c-warning-2: #632F19;
+  --vp-c-warning-3: var(--warn-ink);
+  --vp-c-warning-soft: var(--warn-bg);
+
+  --vp-c-danger-1: var(--danger);
+  --vp-c-danger-2: #8C1D17;
+  --vp-c-danger-3: var(--danger);
+  --vp-c-danger-soft: var(--danger-light);
+
+  --vp-c-caution-1: var(--flag);
+  --vp-c-caution-2: #873D22;
+  --vp-c-caution-3: var(--flag);
+  --vp-c-caution-soft: var(--flag-light);
+
+  --vp-c-success-1: var(--success);
+  --vp-c-success-2: #246345;
+  --vp-c-success-3: var(--success);
+  --vp-c-success-soft: var(--success-light);
+
+  --vp-c-sponsor: var(--sponsor);
+
+  /* Buttons */
+  --vp-button-brand-border: transparent;
+  --vp-button-brand-text: var(--btn-primary-ink);
+  --vp-button-brand-bg: var(--btn-primary-bg);
+  --vp-button-brand-hover-border: transparent;
+  --vp-button-brand-hover-text: var(--btn-primary-ink);
+  --vp-button-brand-hover-bg: var(--btn-primary-bg-hover);
+  --vp-button-brand-active-border: transparent;
+  --vp-button-brand-active-text: var(--btn-primary-ink);
+  --vp-button-brand-active-bg: var(--btn-primary-bg-hover);
+
+  --vp-button-alt-border: var(--line-strong);
+  --vp-button-alt-text: var(--ink);
+  --vp-button-alt-bg: var(--paper-warm);
+  --vp-button-alt-hover-border: var(--line-strong);
+  --vp-button-alt-hover-text: var(--ink);
+  --vp-button-alt-hover-bg: var(--line);
+  --vp-button-alt-active-border: var(--line-strong);
+  --vp-button-alt-active-text: var(--ink);
+  --vp-button-alt-active-bg: var(--line);
+
+  /* Custom Blocks */
+  --vp-custom-block-info-border: var(--info-border);
+  --vp-custom-block-info-text: var(--info-ink);
+  --vp-custom-block-info-bg: var(--info-bg);
+  --vp-custom-block-info-code-bg: var(--info-bg);
+
+  --vp-custom-block-tip-border: var(--accent);
+  --vp-custom-block-tip-text: var(--accent-ink);
+  --vp-custom-block-tip-bg: var(--accent-soft);
+  --vp-custom-block-tip-code-bg: var(--accent-soft);
+
+  --vp-custom-block-warning-border: var(--flag-border);
+  --vp-custom-block-warning-text: var(--warn-ink);
+  --vp-custom-block-warning-bg: var(--warn-bg);
+  --vp-custom-block-warning-code-bg: var(--warn-bg);
+
+  --vp-custom-block-danger-border: var(--danger);
+  --vp-custom-block-danger-text: var(--danger);
+  --vp-custom-block-danger-bg: var(--danger-light);
+  --vp-custom-block-danger-code-bg: var(--danger-light);
+
+  --vp-custom-block-caution-border: var(--flag-border);
+  --vp-custom-block-caution-text: var(--flag);
+  --vp-custom-block-caution-bg: var(--flag-light);
+  --vp-custom-block-caution-code-bg: var(--flag-light);
+
+  --vp-custom-block-note-border: var(--line);
+  --vp-custom-block-note-text: var(--ink);
+  --vp-custom-block-note-bg: var(--paper-warm);
+  --vp-custom-block-note-code-bg: var(--paper-warm);
+
+  /* Code block tokens */
+  --vp-code-color: var(--accent);
+  --vp-code-link-color: var(--accent);
+  --vp-code-link-hover-color: var(--accent-ink);
+  --vp-code-bg: var(--paper-warm);
+  --vp-code-block-bg: var(--paper-warm);
+  --vp-code-block-color: var(--ink-soft);
+  --vp-code-block-divider-color: var(--line);
+
+  /* Shadows */
+  --vp-shadow-1: var(--shadow-card);
+  --vp-shadow-2: var(--shadow-card-lg);
+  --vp-shadow-3: var(--shadow-card-lg);
+
+  /* Search */
+  --vp-local-search-bg: var(--paper);
+  --vp-local-search-result-bg: var(--paper);
+  --vp-local-search-result-border: var(--line);
+  --vp-local-search-result-selected-bg: var(--paper-warm);
+  --vp-local-search-result-selected-border: var(--accent);
+  --vp-local-search-highlight-bg: var(--accent-soft);
+  --vp-local-search-highlight-text: var(--accent-ink);
 }
 
 .dark {
-  --vp-c-brand-1: #3a9d7a;
-  --vp-c-brand-2: #2d7d60;
-  --vp-c-brand-soft: rgba(58, 157, 122, 0.16);
-  --vp-c-text-1: rgba(255, 255, 245, 0.93);
-  --vp-c-text-2: rgba(235, 235, 225, 0.7);
+  /* UniBooks Raw Tokens — Dark */
+  --ink: #EDE8DE;
+  --ink-soft: #C4BDB0;
+  --muted: #9B9488;
+  --paper: #181716;
+  --paper-warm: #201F1B;
+  --line: #3B382E;
+  --line-strong: #706A5A;
+  --surface-raised: #292723;
+  --surface-raised-border: #4A4640;
+  --surface-card: #262421;
+
+  --accent: #4B9C7B;
+  --accent-ink: #7FC4A6;
+  --accent-soft: #1E2B25;
+
+  --brand-warm: #E09A63;
+  --brand-warm-soft: #2B2119;
+
+  --flag: #C97A54;
+  --flag-light: #2E211A;
+  --flag-border: #4A3226;
+
+  --warn-bg: #2E2419;
+  --warn-ink: #E8B98C;
+
+  --danger: #E8776F;
+  --danger-light: #2E1C1A;
+
+  --success: #5FB08C;
+  --success-light: #1E2D26;
+
+  --info-bg: #172554;
+  --info-ink: #93C5FD;
+  --info-border: #1E3A8A;
+
+  --sponsor: #C49A6C;
+
+  --btn-primary-bg: #2F7A5C;
+  --btn-primary-ink: #F2F7F4;
+  --btn-primary-bg-hover: #256349;
+
+  --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.4), 0 10px 24px -12px rgba(0, 0, 0, 0.6);
+  --shadow-card-lg: 0 2px 4px rgba(0, 0, 0, 0.5), 0 16px 32px -10px rgba(0, 0, 0, 0.7);
+
+  /* VitePress Functional Token Mappings — Dark */
+  --vp-c-text-1: var(--ink);
+  --vp-c-text-2: var(--ink-soft);
+  --vp-c-text-3: var(--muted);
+  --vp-c-neutral: var(--ink);
+  --vp-c-neutral-inverse: var(--paper);
+
+  --vp-c-bg: var(--paper);
+  --vp-c-bg-alt: var(--paper-warm);
+  --vp-c-bg-elv: var(--surface-raised);
+  --vp-c-bg-soft: var(--surface-card);
+
+  --vp-c-border: var(--line-strong);
+  --vp-c-divider: var(--line);
+  --vp-c-gutter: var(--line);
+
+  --vp-c-brand-1: var(--accent);
+  --vp-c-brand-2: var(--accent-ink);
+  --vp-c-brand-3: var(--btn-primary-bg);
+  --vp-c-brand-soft: var(--accent-soft);
+  --vp-c-brand: var(--vp-c-brand-1);
+
+  --vp-home-hero-name-color: var(--accent);
+  --vp-home-hero-name-background: transparent;
+
+  /* VitePress Status Mappings */
+  --vp-c-tip-1: var(--accent);
+  --vp-c-tip-2: var(--accent-ink);
+  --vp-c-tip-3: var(--btn-primary-bg);
+  --vp-c-tip-soft: var(--accent-soft);
+
+  --vp-c-note-1: var(--accent);
+  --vp-c-note-2: var(--accent-ink);
+  --vp-c-note-3: var(--btn-primary-bg);
+  --vp-c-note-soft: var(--accent-soft);
+
+  --vp-c-warning-1: var(--warn-ink);
+  --vp-c-warning-2: #F0CCA8;
+  --vp-c-warning-3: var(--warn-ink);
+  --vp-c-warning-soft: var(--warn-bg);
+
+  --vp-c-danger-1: var(--danger);
+  --vp-c-danger-2: #EF9A94;
+  --vp-c-danger-3: var(--danger);
+  --vp-c-danger-soft: var(--danger-light);
+
+  --vp-c-caution-1: var(--flag);
+  --vp-c-caution-2: #D99676;
+  --vp-c-caution-3: var(--flag);
+  --vp-c-caution-soft: var(--flag-light);
+
+  --vp-c-success-1: var(--success);
+  --vp-c-success-2: #4B9C7B;
+  --vp-c-success-3: var(--success);
+  --vp-c-success-soft: var(--success-light);
+
+  --vp-c-sponsor: var(--sponsor);
+
+  /* Buttons */
+  --vp-button-brand-border: transparent;
+  --vp-button-brand-text: var(--btn-primary-ink);
+  --vp-button-brand-bg: var(--btn-primary-bg);
+  --vp-button-brand-hover-border: transparent;
+  --vp-button-brand-hover-text: var(--btn-primary-ink);
+  --vp-button-brand-hover-bg: var(--btn-primary-bg-hover);
+  --vp-button-brand-active-border: transparent;
+  --vp-button-brand-active-text: var(--btn-primary-ink);
+  --vp-button-brand-active-bg: var(--btn-primary-bg-hover);
+
+  --vp-button-alt-border: var(--line-strong);
+  --vp-button-alt-text: var(--ink);
+  --vp-button-alt-bg: var(--paper-warm);
+  --vp-button-alt-hover-border: var(--line-strong);
+  --vp-button-alt-hover-text: var(--ink);
+  --vp-button-alt-hover-bg: var(--line);
+  --vp-button-alt-active-border: var(--line-strong);
+  --vp-button-alt-active-text: var(--ink);
+  --vp-button-alt-active-bg: var(--line);
+
+  /* Custom Blocks */
+  --vp-custom-block-info-border: var(--info-border);
+  --vp-custom-block-info-text: var(--info-ink);
+  --vp-custom-block-info-bg: var(--info-bg);
+  --vp-custom-block-info-code-bg: var(--info-bg);
+
+  --vp-custom-block-tip-border: var(--accent);
+  --vp-custom-block-tip-text: var(--accent-ink);
+  --vp-custom-block-tip-bg: var(--accent-soft);
+  --vp-custom-block-tip-code-bg: var(--accent-soft);
+
+  --vp-custom-block-warning-border: var(--flag-border);
+  --vp-custom-block-warning-text: var(--warn-ink);
+  --vp-custom-block-warning-bg: var(--warn-bg);
+  --vp-custom-block-warning-code-bg: var(--warn-bg);
+
+  --vp-custom-block-danger-border: var(--danger);
+  --vp-custom-block-danger-text: var(--danger);
+  --vp-custom-block-danger-bg: var(--danger-light);
+  --vp-custom-block-danger-code-bg: var(--danger-light);
+
+  --vp-custom-block-caution-border: var(--flag-border);
+  --vp-custom-block-caution-text: var(--flag);
+  --vp-custom-block-caution-bg: var(--flag-light);
+  --vp-custom-block-caution-code-bg: var(--flag-light);
+
+  --vp-custom-block-note-border: var(--line);
+  --vp-custom-block-note-text: var(--ink);
+  --vp-custom-block-note-bg: var(--paper-warm);
+  --vp-custom-block-note-code-bg: var(--paper-warm);
+
+  /* Code block tokens */
+  --vp-code-color: var(--accent);
+  --vp-code-link-color: var(--accent);
+  --vp-code-link-hover-color: var(--accent-ink);
+  --vp-code-bg: var(--paper-warm);
+  --vp-code-block-bg: var(--paper-warm);
+  --vp-code-block-color: var(--ink-soft);
+  --vp-code-block-divider-color: var(--line);
+
+  /* Shadows */
+  --vp-shadow-1: var(--shadow-card);
+  --vp-shadow-2: var(--shadow-card-lg);
+  --vp-shadow-3: var(--shadow-card-lg);
+
+  /* Search */
+  --vp-local-search-bg: var(--surface-raised);
+  --vp-local-search-result-bg: var(--surface-raised);
+  --vp-local-search-result-border: var(--line);
+  --vp-local-search-result-selected-bg: var(--surface-card);
+  --vp-local-search-result-selected-border: var(--accent);
+  --vp-local-search-highlight-bg: var(--accent-soft);
+  --vp-local-search-highlight-text: var(--accent-ink);
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+:root,
+[lang]:where(:lang(zh, ja)) {
+  --vp-font-family-base:
+    'Noto Sans TC',
+    -apple-system, 'PingFang TC', 'Microsoft JhengHei',
+    system-ui, sans-serif;
+}
+
+body {
+  font-family: var(--vp-font-family-base);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Headings: Noto Serif TC 700 */
+h1, h2, h3, h4, h5, h6,
+.vp-doc h1,
+.vp-doc h2,
+.vp-doc h3,
+.vp-doc h4,
+.vp-doc h5,
+.vp-doc h6,
+.VPHero .heading,
+.VPHero .text,
+.VPFeature .title {
+  font-family: 'Noto Serif TC', Georgia, Cambria, 'Times New Roman', serif;
+  font-weight: 700;
+}
+
+/* Wordmark (.VPNavBarTitle) in Fraunces 600 */
+.VPNavBarTitle,
+.VPNavBarTitle .title,
+.VPNavBarTitle span,
+.VPHero .name {
+  font-family: 'Fraunces', 'Noto Serif TC', serif;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+/* ==========================================================================
+   Shapes & Controls
+   ========================================================================== */
+
+/* Controls: 6px radius */
+.VPButton,
+.VPButton.medium,
+.VPButton.big,
+.VPNavBarSearchButton,
+.DocSearch-Button,
+.VPLocalSearchBox .search-bar,
+.VPLocalSearchBox input,
+input, select, textarea {
+  border-radius: var(--radius-control) !important;
+}
+
+.VPFeature .icon {
+  border-radius: var(--radius-control);
+}
+
+/* Large surfaces: 8px radius */
+.VPFeature,
+.custom-block,
+.VPMenu,
+.VPFlyout .menu,
+.VPLocalSearchBox .shell,
+.DocSearch-Modal,
+.vp-doc div[class*='language-'] {
+  border-radius: var(--radius-lg) !important;
+}
+
+/* Feature cards: hairline borders using --line, --shadow-card, and --brand-warm hover */
+.VPFeature {
+  border: 1px solid var(--line);
+  background-color: var(--surface-card);
+  box-shadow: var(--shadow-card);
+  transition:
+    border-color var(--motion-base) ease,
+    box-shadow var(--motion-base) ease,
+    transform var(--motion-base) ease;
+}
+
+@media (hover: hover) {
+  .VPFeature:hover {
+    border-color: var(--brand-warm);
+    box-shadow: var(--shadow-card-lg);
+    transform: translateY(-2px);
+  }
+}
+
+/* Home hero secondary accent: a short warm rule under hero */
+.VPHero .tagline::after {
+  content: '';
+  display: block;
+  width: 48px;
+  height: 3px;
+  background-color: var(--brand-warm);
+  margin: 24px 0 0;
+  border-radius: var(--radius-xs);
+}
+
+.VPHero.has-image .tagline::after {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 960px) {
+  .VPHero.has-image .tagline::after {
+    margin-left: 0;
+  }
+}
+
+/* ==========================================================================
+   Interactive details & Focus
+   ========================================================================== */
+
+:where(a, button, input, select, textarea, summary, [tabindex]):focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.vp-doc a {
+  text-underline-offset: 2px;
+}
+
+/* Motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
