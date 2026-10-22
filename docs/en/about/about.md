@@ -36,10 +36,12 @@ Books — particularly textbooks — are identified by ISBN, making it possible 
 
 ## The Team
 
-UniBooks was started by a group of sistems/computer science university students who lived through semester after semester of "senpai, do you still have this book?"
+UniBooks is built and operated by the **CycleUni team**, a group of computer science students who lived through semester after semester of "do you still have this book?"
 
-The tech stack: Angular frontend and Django backend, deployed over Cloudflare Pages and hosted with Vercel. The source is entirely open in GitHub.
+The frontend is **Angular** and the backend runs on **Cloudflare Workers**. The source is open on [GitHub](https://github.com/CycleUni/UniBooks) for anyone to read.
+
+To see who is behind it, visit [the team page](/en/about/team).
 
 ---
 
-**Last updated: July 2026**
+**Last updated: October 2026**

@@ -1,6 +1,6 @@
 # Privacy Policy
 
-> Last updated: October 18, 2026
+> Last updated: October 22, 2026
 
 UniBooks (the "Platform") respects your privacy. This policy explains what data we collect, why, how we use and protect it, and the rights you have. It is written in accordance with Taiwan's Personal Data Protection Act ("PDPA") and related regulations.
 
@@ -10,7 +10,7 @@ By using the Platform you acknowledge that you have read this policy. If you do 
 
 ## 1. Who We Are
 
-The Platform is operated by the UniBooks development team. For any question or request about your personal data, write to [services@unibooks.app](mailto:services@unibooks.app).
+The Platform is operated by the CycleUni team. For any question or request about your personal data, write to [services@unibooks.app](mailto:services@unibooks.app).
 
 ---
 

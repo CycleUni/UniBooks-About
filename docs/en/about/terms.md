@@ -1,6 +1,6 @@
 # Terms of Service
 
-> Last updated: September 30, 2026
+> Last updated: October 22, 2026
 
 Welcome to UniBooks (the "Platform"). Please read these Terms of Service (the "Terms") carefully. By registering, signing in or otherwise using the Platform you confirm that you have read, understood and agree to be bound by these Terms and the [Privacy Policy](/en/about/privacy). If you do not agree, do not use the Platform.
 
@@ -131,7 +131,7 @@ You must not:
 
 ## 9. Intellectual Property
 
-The Platform's name, logo, interface design, code, database structure and other non-User Content belong to the UniBooks development team or the respective rights holders. You may not copy, distribute, adapt or use them commercially without written permission.
+The Platform's name, logo, interface design, code, database structure and other non-User Content belong to the CycleUni team or the respective rights holders. You may not copy, distribute, adapt or use them commercially without written permission.
 
 ---
 

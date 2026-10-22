@@ -79,6 +79,7 @@ export default defineConfig({
             text: '關於',
             items: [
               { text: '關於我們', link: '/about/about' },
+              { text: '團隊成員', link: '/about/team' },
               { text: '常見問題', link: '/about/faq' },
               { text: '服務條款', link: '/about/terms' },
               { text: '隱私權聲明', link: '/about/privacy' }
@@ -105,6 +106,7 @@ export default defineConfig({
               text: '關於',
               items: [
                 { text: '關於我們', link: '/about/about' },
+              { text: '團隊成員', link: '/about/team' },
                 { text: '常見問題', link: '/about/faq' },
                 { text: '服務條款', link: '/about/terms' },
                 { text: '隱私權聲明', link: '/about/privacy' }
@@ -141,7 +143,7 @@ export default defineConfig({
         ],
 
         footer: {
-          message: '© 2026 UniBooks. All rights reserved.<br><a href="/about/privacy">隱私權聲明</a> · <a href="/about/terms">服務條款</a>',
+          message: '© 2026 CycleUni. All rights reserved.<br><a href="/about/privacy">隱私權聲明</a> · <a href="/about/terms">服務條款</a>',
         },
 
         returnToTopLabel: '回到頂部',
@@ -175,6 +177,7 @@ export default defineConfig({
             text: 'About',
             items: [
               { text: 'About Us', link: '/en/about/about' },
+              { text: 'The Team', link: '/en/about/team' },
               { text: 'FAQ', link: '/en/about/faq' },
               { text: 'Terms of Service', link: '/en/about/terms' },
               { text: 'Privacy', link: '/en/about/privacy' }
@@ -201,6 +204,7 @@ export default defineConfig({
               text: 'About',
               items: [
                 { text: 'About Us', link: '/en/about/about' },
+              { text: 'The Team', link: '/en/about/team' },
                 { text: 'FAQ', link: '/en/about/faq' },
                 { text: 'Terms of Service', link: '/en/about/terms' },
                 { text: 'Privacy Policy', link: '/en/about/privacy' }
@@ -214,7 +218,7 @@ export default defineConfig({
         ],
 
         footer: {
-          message: '© 2026 UniBooks. All rights reserved.<br><a href="/en/about/privacy">Privacy Policy</a> · <a href="/en/about/terms">Terms of Service</a>',
+          message: '© 2026 CycleUni. All rights reserved.<br><a href="/en/about/privacy">Privacy Policy</a> · <a href="/en/about/terms">Terms of Service</a>',
         }
       }
     }
