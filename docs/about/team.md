@@ -10,7 +10,7 @@ import {
   VPTeamPageTitle,
   VPTeamPageSection,
   VPTeamMembers
-} from 'vitepress/theme'
+} from 'vitepress/theme-without-fonts'
 
 // Keep each entry to what the member chose to share: name, avatar, GitHub
 // link and a short line about themself. No contact details or personal photos.

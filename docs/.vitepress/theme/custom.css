@@ -374,12 +374,26 @@
    Typography
    ========================================================================== */
 
+/* The CJK web fonts are named only above 901px. Cloudflare Fonts inlines
+   their @font-face rules and drops the media guard on the stylesheet link,
+   so naming them here is what keeps phones from downloading ~1 MB of Noto. */
 :root,
 [lang]:where(:lang(zh, ja)) {
   --vp-font-family-base:
-    'Noto Sans TC',
     -apple-system, 'PingFang TC', 'Microsoft JhengHei',
     system-ui, sans-serif;
+  --ub-font-heading: Georgia, Cambria, 'Times New Roman', serif;
+}
+
+@media (min-width: 901px) {
+  :root,
+  [lang]:where(:lang(zh, ja)) {
+    --vp-font-family-base:
+      'Noto Sans TC',
+      -apple-system, 'PingFang TC', 'Microsoft JhengHei',
+      system-ui, sans-serif;
+    --ub-font-heading: 'Noto Serif TC', Georgia, Cambria, 'Times New Roman', serif;
+  }
 }
 
 body {
@@ -398,7 +412,7 @@ h1, h2, h3, h4, h5, h6,
 .VPHero .heading,
 .VPHero .text,
 .VPFeature .title {
-  font-family: 'Noto Serif TC', Georgia, Cambria, 'Times New Roman', serif;
+  font-family: var(--ub-font-heading);
   font-weight: 700;
 }
 
