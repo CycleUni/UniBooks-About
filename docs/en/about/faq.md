@@ -24,7 +24,7 @@ Yes. Your account continues to work but carries Alumn titles. Some on‑campus o
 
 ## 6. Do I need to re-verify?
 
-Yes, every two years, to confirm you are still a student. 30 days before it expires, we email you a reminder and your account settings prompt you to renew: verify your school email again, or sign in with your school Google account, and it is extended by two years. Once it expires, listing books and messaging sellers are paused until you re-verify.
+Yes, every two years, to confirm you are still a student. 30 days before it expires, we email you a reminder and your account settings prompt you to renew. Verifying your school email again extends it by two years; if your account signs in with your school email and is linked to Google, signing in with that school Google account works too. Once it expires, listing books and messaging sellers are paused until you verify again.
 
 ## 7. How do I sign up and sign in?
 
