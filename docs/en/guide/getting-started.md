@@ -23,7 +23,7 @@ You can browse and search every book without registering or signing in. You only
 3. We send an activation link to your inbox. Click it to activate the account, then sign in.
 4. In "Account settings", verify your **`.edu.tw` school email**. Once that is done you can list books and message sellers.
 
-> **Note**: UniBooks is for current college and university students. You must verify your school email before listing or contacting sellers, and re-verify it after each semester starts to confirm you are still enrolled.
+> **Note**: UniBooks is for current college and university students. You must verify your school email before listing or contacting sellers, and re-verify it every two years (by email again, or by signing in with your school Google account) to confirm you are still enrolled.
 
 ---
 

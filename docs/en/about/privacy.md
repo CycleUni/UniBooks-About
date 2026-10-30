@@ -1,6 +1,6 @@
 # Privacy Policy
 
-> Last updated: October 22, 2026
+> Last updated: October 30, 2026
 
 UniBooks (the "Platform") respects your privacy. This policy explains what data we collect, why, how we use and protect it, and the rights you have. It is written in accordance with Taiwan's Personal Data Protection Act ("PDPA") and related regulations.
 
@@ -23,7 +23,7 @@ The Platform is operated by the CycleUni team. For any question or request about
 | Account | Email, name or nickname, avatar, language preferences | Sign-up, profile edits |
 | Sign-in | Password (stored only as a one-way hash); if you use Google sign-in, the Google account identifier, email, name and avatar Google shares with us | Sign-up, sign-in |
 | Passkeys | If you add a passkey: its public key, credential ID, a name you give it, device type and whether it is synced or backed up, the authenticator model ID (AAGUID), a sign-in counter, and creation and last-use times. Your fingerprint, face or screen-lock data is checked only on your device, never leaves it, and is never received by us | Adding a passkey, signing in with one |
-| Student verification | School, `.edu.tw` school email, verification time and per-semester re-verification records; for manual review, the supporting information and request notes you submit | Verification |
+| Student verification | School, `.edu.tw` school email, verification time, expiry date and re-verification records; for manual review, the supporting information and request notes you submit | Verification |
 | Listings | Title, ISBN, price, condition grade and description, condition photos | Creating a listing |
 | Transactions | Orders, order status, cancellations, completion confirmations | Ordering, meetups |
 | Communications | In-app chat messages and timestamps | Messaging other users |
@@ -113,7 +113,7 @@ If we ever want to use Google user data in a way not described in this section, 
 
 We use your data only for these specific purposes:
 
-1. **Providing and operating the service**: account creation and verification, student-status checks and semester re-verification, book search and listings, matching and chat, order flow, restock alerts.
+1. **Providing and operating the service**: account creation and verification, student-status checks and re-verification every two years, book search and listings, matching and chat, order flow, restock alerts.
 2. **Notifications**: verification emails, password resets, order updates, restock alerts and, if enabled, new-message emails (you can turn these off in settings).
 3. **Safety and anti-fraud**: detecting impersonation, duplicate accounts, spam, abuse and violations of our Terms; handling reports and appeals.
 4. **Improving the product**: analyzing anonymized or aggregated usage data to improve search and usability.

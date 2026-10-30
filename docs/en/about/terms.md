@@ -1,6 +1,6 @@
 # Terms of Service
 
-> Last updated: October 22, 2026
+> Last updated: October 30, 2026
 
 Welcome to UniBooks (the "Platform"). Please read these Terms of Service (the "Terms") carefully. By registering, signing in or otherwise using the Platform you confirm that you have read, understood and agree to be bound by these Terms and the [Privacy Policy](/en/about/privacy). If you do not agree, do not use the Platform.
 
@@ -24,7 +24,7 @@ Welcome to UniBooks (the "Platform"). Please read these Terms of Service (the "T
 
 2.2 After registering you must verify your student status with your school-issued `.edu.tw` email before you can list books or place orders. If you cannot use a school email you may request manual review through the Platform's process.
 
-2.3 To confirm you are still enrolled, you must re-verify within 30 days after each semester begins. Some features are restricted until you do, and are restored once you re-verify.
+2.3 To confirm you are still enrolled, a student verification is valid for two years and must be renewed before it expires. Verifying your school email again, or signing in with your school Google account, counts as re-verification. Some features are restricted until you do, and are restored once you re-verify.
 
 2.4 After graduation your account continues as "Alumni"; some campus-only features may no longer be available.
 

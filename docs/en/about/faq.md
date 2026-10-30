@@ -22,9 +22,9 @@ Valid .edu.tw ensures everyone who trades or communicates is an actual Taiwanese
 
 Yes. Your account continues to work but carries Alumn titles. Some on‑campus only features may become limited.
 
-## 6. Do I need to re-verify every semester?
+## 6. Do I need to re-verify?
 
-Yes. Semester re‑verification confirms your current student status; a clean student community is trust the advertisement business chain.
+Yes, every two years, to confirm you are still a student. From 30 days before it expires, your account settings remind you to renew: verify your school email again, or sign in with your school Google account, and it is extended by two years. Once it expires, listing books and messaging sellers are paused until you re-verify.
 
 ## 7. How do I sign up and sign in?
 
