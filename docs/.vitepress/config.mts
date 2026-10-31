@@ -1,6 +1,9 @@
 import { defineConfig } from 'vitepress'
 
-const SITE_ORIGIN = 'https://about.unibooks.app'
+// Served under the app's own origin: a Workers Route sends unibooks.app/about*
+// to this Worker (wrangler.jsonc). `base` prefixes every asset and link, and
+// outDir puts the files under about/ so the Worker finds them at the same path.
+const SITE_ORIGIN = 'https://unibooks.app/about'
 const APP_ORIGIN = 'https://unibooks.app'
 
 // This site is the help centre for unibooks.app, not the product. Its titles
@@ -17,6 +20,8 @@ export default defineConfig({
   titleTemplate: ':title | UniBooks 說明中心',
   description: 'UniBooks 使用指南、常見問題、服務條款與隱私權聲明',
   cleanUrls: true,
+  base: '/about/',
+  outDir: '.vitepress/dist/about',
 
   // Served by the app, so the two sites share one set of icons.
   head: [

@@ -1,10 +1,12 @@
 {
   "devDependencies": {
-    "vitepress": "^2.0.0-alpha.18"
+    "vitepress": "^2.0.0-alpha.18",
+    "wrangler": "^4.156.0"
   },
   "scripts": {
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs"
+    "docs:preview": "vitepress preview docs",
+    "deploy": "vitepress build docs && wrangler deploy"
   }
 }

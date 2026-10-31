@@ -1,0 +1,18 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  // The help centre as a Worker with static assets (no script): the build
+  // lands in dist/about/, so a request for /about/x finds dist/about/x.
+  "name": "unibooks-about",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "docs/.vitepress/dist",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "none"
+  },
+  // A Workers Route, not a domain of its own: unibooks.app/about and below
+  // come here, everything else on unibooks.app stays with the app's Worker.
+  "routes": [
+    { "pattern": "unibooks.app/about", "zone_name": "unibooks.app" },
+    { "pattern": "unibooks.app/about/*", "zone_name": "unibooks.app" }
+  ]
+}
