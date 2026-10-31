@@ -60,4 +60,4 @@ Intend to give away your old book for free? Set the price to **$0**.
 
 ## What to Report
 
-For suspicious or untrustworthy users or incorrect listings, see [Reporting Support](/about/faq)
+For suspicious or untrustworthy users or incorrect listings, see [Reporting Support](/faq)

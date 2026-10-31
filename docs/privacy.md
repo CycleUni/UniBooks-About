@@ -10,7 +10,7 @@ UniBooks（以下簡稱「本平台」）重視你的隱私。本聲明說明我
 
 ## English Summary
 
-**UniBooks** ([unibooks.app](https://unibooks.app)) is a second-hand textbook search and matching platform for university students in Taiwan. This page is the privacy policy of the UniBooks app. The complete English policy is at [Privacy Policy (English)](/en/about/privacy); the full Traditional Chinese policy follows below.
+**UniBooks** ([unibooks.app](https://unibooks.app)) is a second-hand textbook search and matching platform for university students in Taiwan. This page is the privacy policy of the UniBooks app. The complete English policy is at [Privacy Policy (English)](/en/privacy); the full Traditional Chinese policy follows below.
 
 **Data we collect**
 - *Account data*: email address, name or nickname, avatar, language preferences.
@@ -249,4 +249,4 @@ UniBooks 使用與傳輸從 Google API 取得的資訊，將遵守 [Google API �
 
 ## 十二、聯絡我們
 
-對本聲明有任何疑問、意見或申訴，請寄信至 [services@unibooks.app](mailto:services@unibooks.app)。相關條件亦請參閱[服務條款](/about/terms)。
+對本聲明有任何疑問、意見或申訴，請寄信至 [services@unibooks.app](mailto:services@unibooks.app)。相關條件亦請參閱[服務條款](/terms)。

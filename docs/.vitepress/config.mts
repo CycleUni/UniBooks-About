@@ -15,6 +15,39 @@ function pageUrl(relativePath: string): string {
   return `${SITE_ORIGIN}/${path}`
 }
 
+// The pages beside the guides sit at the top of each language, so each one
+// needs its own sidebar key.
+const aboutPages = ['us', 'team', 'faq', 'terms', 'privacy']
+function sidebarFor<T>(items: T, prefix: string): Record<string, T> {
+  return Object.fromEntries(aboutPages.map((page) => [`${prefix}/${page}`, items]))
+}
+
+const aboutSidebar = [
+  {
+    text: '關於',
+    items: [
+      { text: '關於我們', link: '/us' },
+      { text: '團隊成員', link: '/team' },
+      { text: '常見問題', link: '/faq' },
+      { text: '服務條款', link: '/terms' },
+      { text: '隱私權聲明', link: '/privacy' }
+    ]
+  }
+]
+
+const aboutSidebarEn = [
+  {
+    text: 'About',
+    items: [
+      { text: 'About Us', link: '/en/us' },
+      { text: 'The Team', link: '/en/team' },
+      { text: 'FAQ', link: '/en/faq' },
+      { text: 'Terms of Service', link: '/en/terms' },
+      { text: 'Privacy Policy', link: '/en/privacy' }
+    ]
+  }
+]
+
 export default defineConfig({
   title: 'UniBooks 說明中心',
   titleTemplate: ':title | UniBooks 說明中心',
@@ -83,14 +116,14 @@ export default defineConfig({
           {
             text: '關於',
             items: [
-              { text: '關於我們', link: '/about/about' },
-              { text: '團隊成員', link: '/about/team' },
-              { text: '常見問題', link: '/about/faq' },
-              { text: '服務條款', link: '/about/terms' },
-              { text: '隱私權聲明', link: '/about/privacy' }
+              { text: '關於我們', link: '/us' },
+              { text: '團隊成員', link: '/team' },
+              { text: '常見問題', link: '/faq' },
+              { text: '服務條款', link: '/terms' },
+              { text: '隱私權聲明', link: '/privacy' }
             ]
           },
-          { text: '前往 UniBooks', link: `${APP_ORIGIN}/` }
+          { text: '前往 UniBooks', link: `${APP_ORIGIN}/`, target: '_self' }
         ],
 
         sidebar: {
@@ -106,18 +139,7 @@ export default defineConfig({
               ]
             }
           ],
-          '/about/': [
-            {
-              text: '關於',
-              items: [
-                { text: '關於我們', link: '/about/about' },
-              { text: '團隊成員', link: '/about/team' },
-                { text: '常見問題', link: '/about/faq' },
-                { text: '服務條款', link: '/about/terms' },
-                { text: '隱私權聲明', link: '/about/privacy' }
-              ]
-            }
-          ]
+          ...sidebarFor(aboutSidebar, '')
         },
 
         search: {
@@ -148,7 +170,7 @@ export default defineConfig({
         ],
 
         footer: {
-          message: '© 2026 CycleUni. All rights reserved.<br><a href="/about/privacy">隱私權聲明</a> · <a href="/about/terms">服務條款</a>',
+          message: '© 2026 CycleUni. All rights reserved.<br><a href="/privacy">隱私權聲明</a> · <a href="/terms">服務條款</a>',
         },
 
         returnToTopLabel: '回到頂部',
@@ -181,14 +203,14 @@ export default defineConfig({
           {
             text: 'About',
             items: [
-              { text: 'About Us', link: '/en/about/about' },
-              { text: 'The Team', link: '/en/about/team' },
-              { text: 'FAQ', link: '/en/about/faq' },
-              { text: 'Terms of Service', link: '/en/about/terms' },
-              { text: 'Privacy', link: '/en/about/privacy' }
+              { text: 'About Us', link: '/en/us' },
+              { text: 'The Team', link: '/en/team' },
+              { text: 'FAQ', link: '/en/faq' },
+              { text: 'Terms of Service', link: '/en/terms' },
+              { text: 'Privacy', link: '/en/privacy' }
             ]
           },
-          { text: 'Open UniBooks', link: `${APP_ORIGIN}/` }
+          { text: 'Open UniBooks', link: `${APP_ORIGIN}/`, target: '_self' }
         ],
 
         sidebar: {
@@ -204,18 +226,7 @@ export default defineConfig({
               ]
             }
           ],
-          '/en/about/': [
-            {
-              text: 'About',
-              items: [
-                { text: 'About Us', link: '/en/about/about' },
-              { text: 'The Team', link: '/en/about/team' },
-                { text: 'FAQ', link: '/en/about/faq' },
-                { text: 'Terms of Service', link: '/en/about/terms' },
-                { text: 'Privacy Policy', link: '/en/about/privacy' }
-              ]
-            }
-          ]
+          ...sidebarFor(aboutSidebarEn, '/en')
         },
 
         socialLinks: [
@@ -223,7 +234,7 @@ export default defineConfig({
         ],
 
         footer: {
-          message: '© 2026 CycleUni. All rights reserved.<br><a href="/en/about/privacy">Privacy Policy</a> · <a href="/en/about/terms">Terms of Service</a>',
+          message: '© 2026 CycleUni. All rights reserved.<br><a href="/en/privacy">Privacy Policy</a> · <a href="/en/terms">Terms of Service</a>',
         }
       }
     }

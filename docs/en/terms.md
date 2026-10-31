@@ -2,7 +2,7 @@
 
 > Last updated: October 30, 2026
 
-Welcome to UniBooks (the "Platform"). Please read these Terms of Service (the "Terms") carefully. By registering, signing in or otherwise using the Platform you confirm that you have read, understood and agree to be bound by these Terms and the [Privacy Policy](/en/about/privacy). If you do not agree, do not use the Platform.
+Welcome to UniBooks (the "Platform"). Please read these Terms of Service (the "Terms") carefully. By registering, signing in or otherwise using the Platform you confirm that you have read, understood and agree to be bound by these Terms and the [Privacy Policy](/en/privacy). If you do not agree, do not use the Platform.
 
 ---
 
@@ -32,7 +32,7 @@ Welcome to UniBooks (the "Platform"). Please read these Terms of Service (the "T
 
 2.6 You must provide accurate, current information and keep your credentials secure. Everything done through your account is treated as done by you; tell us immediately if you suspect misuse.
 
-2.7 You may delete your account at any time in Account Settings. Data handling after deletion follows the [Privacy Policy](/en/about/privacy).
+2.7 You may delete your account at any time in Account Settings. Data handling after deletion follows the [Privacy Policy](/en/privacy).
 
 ---
 
@@ -194,4 +194,4 @@ We may amend these Terms for legal or service reasons. Amended Terms are posted 
 
 ---
 
-Questions? See the [FAQ](/en/about/faq) or email [services@unibooks.app](mailto:services@unibooks.app).
+Questions? See the [FAQ](/en/faq) or email [services@unibooks.app](mailto:services@unibooks.app).

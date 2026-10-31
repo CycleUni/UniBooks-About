@@ -40,7 +40,7 @@ UniBooks is built and operated by the **CycleUni team**, a group of computer sci
 
 The frontend is **Angular** and the backend runs on **Cloudflare Workers**. The source is open on [GitHub](https://github.com/CycleUni/UniBooks) for anyone to read.
 
-To see who is behind it, visit [the team page](/en/about/team).
+To see who is behind it, visit [the team page](/en/team).
 
 ---
 

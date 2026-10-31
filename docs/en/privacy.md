@@ -221,6 +221,6 @@ We may revise this policy for legal, service or operational reasons. Changes are
 
 ## 12. Contact
 
-Questions, comments or complaints about this policy: [services@unibooks.app](mailto:services@unibooks.app). See also our [Terms of Service](/en/about/terms).
+Questions, comments or complaints about this policy: [services@unibooks.app](mailto:services@unibooks.app). See also our [Terms of Service](/en/terms).
 
 > The Traditional Chinese version prevails if the two versions differ.

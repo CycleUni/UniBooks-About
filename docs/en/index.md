@@ -22,10 +22,10 @@ hero:
       link: /en/guide/getting-started
     - theme: alt
       text: View FAQ
-      link: /en/about/faq
+      link: /en/faq
     - theme: alt
       text: Privacy Policy
-      link: /en/about/privacy
+      link: /en/privacy
 
 features:
   - icon: 📚
@@ -54,7 +54,7 @@ UniBooks is a second-hand textbook search and matching platform built for **univ
 
 - **Purpose**: students find the textbooks they need by ISBN, title or course, list books they no longer use, and arrange on-campus meetups with classmates through in-app chat. The platform only matches people — it never handles payments.
 - **Features that need an account**: browsing books requires no sign-in; listing, ordering and chat require signing in and verifying a school `.edu.tw` email. Any email address or a Google account can be used to sign up, and you can sign in with a password, Google or a passkey.
-- **Sign in with Google**: if you choose it, UniBooks receives only your email address, name and avatar, used solely to create and identify your account. We do not access any other Google data. See the [Privacy Policy](/en/about/privacy).
+- **Sign in with Google**: if you choose it, UniBooks receives only your email address, name and avatar, used solely to create and identify your account. We do not access any other Google data. See the [Privacy Policy](/en/privacy).
 
-[Privacy Policy](/en/about/privacy) | [Terms of Service](/en/about/terms) | Contact: [services@unibooks.app](mailto:services@unibooks.app)
+[Privacy Policy](/en/privacy) | [Terms of Service](/en/terms) | Contact: [services@unibooks.app](mailto:services@unibooks.app)
 

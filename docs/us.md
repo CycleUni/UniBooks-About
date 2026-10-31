@@ -42,7 +42,7 @@ UniBooks 由 **CycleUni 團隊**開發與營運。我們是一群資訊背景的
 
 前端使用 **Angular**，後端執行於 **Cloudflare Workers**。原始碼公開在 [GitHub](https://github.com/CycleUni/UniBooks) 上，任何人都可以檢視。
 
-想知道是誰在做這件事，請看[團隊成員](/about/team)。
+想知道是誰在做這件事，請看[團隊成員](/team)。
 
 ## 網站原理
 
