@@ -1,6 +1,6 @@
 # Privacy Policy
 
-> Last updated: October 30, 2026
+> Last updated: October 31, 2026
 
 UniBooks (the "Platform") respects your privacy. This policy explains what data we collect, why, how we use and protect it, and the rights you have. It is written in accordance with Taiwan's Personal Data Protection Act ("PDPA") and related regulations.
 
@@ -38,6 +38,7 @@ The Platform is operated by the CycleUni team. For any question or request about
 - **Bot protection**: when you sign in, sign up or ask for a password-reset link, we use Cloudflare Turnstile to tell people from automated scripts. For this, Cloudflare may process your IP address and signals from your browser and device, and sends us the result of the check; we receive no additional personal data from it. See Cloudflare's [privacy policy](https://www.cloudflare.com/privacypolicy/) and [Turnstile Privacy Addendum](https://www.cloudflare.com/turnstile-privacy-policy/).
 - **Cookies and similar technologies**: see Section 7.
 - **Usage statistics**: anonymous statistics (page views, feature-usage trends) via Google Analytics 4.
+- **Session replays and heatmaps**: we use Microsoft Clarity to record how you use our pages (clicks, scrolling, mouse movement and page layout) to produce session replays and heatmaps that show where the site is hard to use or breaks. Everything you type is masked; chat, checkout, orders, account settings and the admin console are masked entirely; visits opened from an emailed link carrying a one-time token (such as a password reset) are not recorded. A replay is labelled with your region, whether you are signed in, whether you have completed student verification, and the names of actions you took (such as searching or placing an order); if you are signed in it also carries your **user ID**, hashed in your browser before it is sent. Replays do **not** include your email or name, or any Google user data.
 - **Error and performance monitoring**: when something breaks, we record the error message, the page it happened on, browser and device type, and a little page-performance data, using Sentry. If you are signed in, the report carries your **user ID** so we can tell how many people a problem affects; it does **not** include your email, name or chat content. Sessions that hit an error (and a small share of other sessions) keep a replay of the page, in which all text and input is masked and images are not recorded.
 
 ### 2.3 Data from third parties
@@ -116,7 +117,7 @@ We use your data only for these specific purposes:
 1. **Providing and operating the service**: account creation and verification, student-status checks and re-verification every two years, book search and listings, matching and chat, order flow, restock alerts.
 2. **Notifications**: verification emails, password resets, order updates, restock alerts and, if enabled, new-message emails (you can turn these off in settings).
 3. **Safety and anti-fraud**: detecting impersonation, duplicate accounts, spam, abuse and violations of our Terms; handling reports and appeals.
-4. **Improving the product**: analyzing anonymized or aggregated usage data to improve search and usability.
+4. **Improving the product**: analyzing anonymized or aggregated usage data, and masked session replays and heatmaps, to improve search and usability.
 5. **Legal compliance**: responding to lawful requests from authorities and protecting the rights of the Platform and its users.
 6. **Campus content and ad slots (if any)**: showing campus-life content based on your school or region, using your student verification data. We never give advertisers data that identifies you, and we **never** use Google user data for any advertising.
 
@@ -133,6 +134,7 @@ We will not use your data for other purposes; if a new purpose arises we will ob
 - **Server logs**: kept only for a reasonable period needed for security and debugging.
 - **Error reports**: kept for the retention period of our error-monitoring service (Sentry), then deleted automatically.
 - **Google Analytics data**: kept per the Google Analytics retention setting and not linked to your account data.
+- **Session replays and heatmaps**: kept for Microsoft Clarity's retention period, then deleted automatically.
 
 ---
 
@@ -145,6 +147,7 @@ We **do not sell or rent** your personal data. We share it only in these cases:
    - Cloud and network services: website hosting, content delivery, file storage, real-time chat and bot protection (Cloudflare, including Cloudflare Turnstile), plus backend and database hosting.
    - Email delivery services.
    - Error monitoring (Sentry): receives the error reports above, used to find and fix bugs; its servers are in the United States.
+   - Microsoft Clarity: receives the session replay and heatmap data above, used to improve usability; its servers are in the United States. See Microsoft's [privacy statement](https://privacy.microsoft.com/privacystatement).
    - Google: sign-in, Google Analytics (anonymous usage statistics only — no Google user data or account data), Google Books (catalog lookups, no user data).
 3. **With your consent.**
 4. **Legal requirements**: court orders, lawful requests from authorities, or where necessary to protect someone's life, body or property.
@@ -178,6 +181,7 @@ No internet transmission or electronic storage is completely secure. Please keep
 |---|---|---|
 | Essential storage | Keeping you signed in, language and theme preferences, security | Some features will not work without it |
 | Analytics | Anonymous usage statistics via Google Analytics | Yes — via browser settings or Google's opt-out add-on |
+| Session replay | Microsoft Clarity cookies that recognize the same visit and a returning browser; Microsoft may also set cookies on its own domains | Yes — via browser settings |
 
 Bot protection (Cloudflare Turnstile) may store or read a small amount of data in your browser to tell whether you are a person; see Cloudflare's explanation.
 
