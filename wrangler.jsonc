@@ -4,6 +4,8 @@
   // lands in dist/about/, so a request for /about/x finds dist/about/x.
   "name": "unibooks-about",
   "compatibility_date": "2026-10-01",
+  // Workers Builds only runs `wrangler deploy`, so the site is built here.
+  "build": { "command": "npm run docs:build" },
   "assets": {
     "directory": "docs/.vitepress/dist",
     "html_handling": "auto-trailing-slash",
